@@ -1,411 +1,382 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CYSI | Ingeniería e integración de sistemas</title>
-  <meta name="description" content="CYSI - Control y Sistemas Industriales SpA. Integramos ingeniería, automatización y soluciones digitales para optimizar procesos." />
-  <meta name="theme-color" content="#081018" />
-  <meta property="og:title" content="CYSI | Ingeniería e integración de sistemas" />
-  <meta property="og:description" content="Integramos ingeniería, automatización y soluciones digitales para optimizar procesos." />
-  <meta property="og:type" content="website" />
-  <link rel="icon" href="favicon.png" type="image/png" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CYSI | Ingeniería, automatización y soluciones digitales</title>
+  <meta name="description" content="CYSI integra ingeniería, automatización y soluciones digitales para optimizar procesos industriales." />
+  <meta name="theme-color" content="#132226" />
+  <link rel="icon" type="image/png" href="favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a href="#inicio" class="brand" aria-label="Ir al inicio de CYSI">
-        <img src="logo-cysi.png" alt="Logo CYSI" class="brand-logo" />
-        <div class="brand-text">
-          <span class="brand-name">CYSI</span>
-          <span class="brand-sub">Ingeniería e integración de sistemas</span>
-        </div>
+  <header class="site-header" id="top">
+    <div class="container nav-shell">
+      <a class="brand" href="#inicio" aria-label="CYSI Inicio">
+        <img src="logo-cysi.png" alt="Emblema CYSI" />
+        <span class="brand-word">CYSI</span>
       </a>
 
       <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
 
-      <nav class="nav" id="mainNav">
+      <nav class="main-nav" id="mainNav">
         <a href="#soluciones">Soluciones</a>
-        <a href="#ventajas">Por qué CYSI</a>
+        <a href="#vision">Control</a>
         <a href="#proyectos">Proyectos</a>
         <a href="#brain">CYSI Brain</a>
-        <a href="#piloto">Caso piloto</a>
-        <a href="#contacto" class="nav-cta">Contacto</a>
+        <a href="#nosotros">Nosotros</a>
+        <a class="nav-cta" href="#contacto">Hablemos →</a>
       </nav>
     </div>
   </header>
 
   <main>
     <section class="hero" id="inicio">
-      <div class="hero-glow hero-glow-a"></div>
-      <div class="hero-glow hero-glow-b"></div>
-      <div class="container hero-grid">
+      <div class="hero-image" aria-hidden="true"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="geometry geometry-a" aria-hidden="true"></div>
+      <div class="geometry geometry-b" aria-hidden="true"></div>
+
+      <div class="container hero-layout">
         <div class="hero-copy">
-          <div class="eyebrow">CONTROL Y SISTEMAS INDUSTRIALES SpA</div>
+          <div class="kicker">INGENIERÍA · CONTROL · DATOS · EFICIENCIA</div>
+          <div class="hero-brand-row">
+            <img src="logo-cysi.png" alt="CYSI" class="hero-logo" />
+            <span class="hero-brand-name">CYSI</span>
+          </div>
+
           <h1>Integramos ingeniería, automatización y soluciones digitales para optimizar procesos.</h1>
           <p>
-            CYSI desarrolla soluciones para la industria con foco en integración, control, instrumentación,
-            documentación técnica, energía y transformación digital aplicada a la operación.
+            Diseñamos sistemas que conectan equipos, datos y personas para lograr operaciones más estables,
+            medibles, eficientes y preparadas para evolucionar.
           </p>
+
           <div class="hero-actions">
-            <a class="btn btn-primary" href="https://wa.me/56954393441" target="_blank" rel="noopener">Hablar por WhatsApp</a>
-            <a class="btn btn-secondary" href="#proyectos">Ver proyectos</a>
+            <a class="btn btn-copper" href="https://wa.me/56954393441" target="_blank" rel="noopener">Conversemos →</a>
+            <a class="btn btn-ghost" href="#soluciones">Ver soluciones</a>
           </div>
-          <div class="hero-mini-grid">
-            <div class="mini-card">
-              <strong>Ingeniería</strong>
-              <span>Integración y criterio técnico</span>
-            </div>
-            <div class="mini-card">
-              <strong>Automatización</strong>
-              <span>PLC, tableros e instrumentación</span>
-            </div>
-            <div class="mini-card">
-              <strong>Digital</strong>
-              <span>Datos, flujos e IA operativa</span>
-            </div>
+
+          <div class="hero-tags">
+            <span>PLC / SCADA</span>
+            <span>Modelado</span>
+            <span>Instrumentación</span>
+            <span>IA aplicada</span>
           </div>
         </div>
 
-        <div class="hero-visual">
-          <div class="visual-card">
-            <img src="logo-cysi.png" alt="Emblema CYSI" />
+        <div class="hero-technical" aria-label="Panel técnico CYSI">
+          <div class="tech-glass response-card">
+            <div class="tech-card-head">
+              <span>CONTROL DE PROCESOS</span>
+              <code>G(s)=Y(s)/U(s)</code>
+            </div>
+            <svg viewBox="0 0 360 150" role="img" aria-label="Respuesta de un sistema de control">
+              <defs>
+                <linearGradient id="lineCyan" x1="0" x2="1">
+                  <stop offset="0" stop-color="#CFEFF7"/>
+                  <stop offset="1" stop-color="#5FD9EA"/>
+                </linearGradient>
+              </defs>
+              <g class="grid-lines">
+                <path d="M20 25H340M20 60H340M20 95H340M20 130H340" />
+                <path d="M60 15V135M120 15V135M180 15V135M240 15V135M300 15V135" />
+              </g>
+              <path class="ref-line" d="M20 72H340" />
+              <path class="response-line" d="M20 132 C55 130,60 34,98 40 C132 46,128 88,164 80 C198 73,196 66,230 71 C267 77,287 72,340 72" />
+            </svg>
+            <div class="legend"><span class="legend-cyan">● Proceso</span><span class="legend-copper">● Referencia</span></div>
+          </div>
+
+          <div class="tech-glass protocol-card">
+            <span class="mini-title">PROTOCOLOS INDUSTRIALES</span>
+            <div class="protocols">
+              <span>Modbus</span><span>OPC UA</span><span>MQTT</span><span>EtherNet/IP</span><span>PROFINET</span>
+            </div>
+          </div>
+
+          <div class="tech-glass equation-card">
+            <span class="mini-title">CONTROL</span>
+            <code>u(t)=K<sub>p</sub>e(t)+K<sub>i</sub>∫e(t)dt+K<sub>d</sub>de/dt</code>
           </div>
         </div>
       </div>
+
+      <div class="hero-service-strip container">
+        <div><span class="strip-icon">⌬</span><b>Ingeniería</b><small>Integración de sistemas</small></div>
+        <div><span class="strip-icon">⌁</span><b>Control</b><small>Estabilidad y respuesta</small></div>
+        <div><span class="strip-icon">◉</span><b>Instrumentación</b><small>Datos confiables</small></div>
+        <div><span class="strip-icon">⌘</span><b>Digital</b><small>Automatización e IA</small></div>
+        <div><span class="strip-icon">◒</span><b>Eficiencia</b><small>Energía y sostenibilidad</small></div>
+      </div>
     </section>
 
-    <section class="section" id="soluciones">
+    <section class="section solutions-section" id="soluciones">
       <div class="container">
-        <div class="section-head">
-          <span class="section-tag">SOLUCIONES</span>
-          <h2>Líneas prioritarias de servicio</h2>
-          <p>Ordenadas según el foco actual de desarrollo y posicionamiento comercial de CYSI.</p>
+        <div class="section-heading heading-row">
+          <div>
+            <span class="eyebrow">SOLUCIONES</span>
+            <h2>Ingeniería real para operaciones más inteligentes.</h2>
+          </div>
+          <p>Partimos por el problema técnico y construimos una solución integrable, medible y escalable.</p>
         </div>
 
-        <div class="card-grid three">
-          <article class="info-card featured-card">
-            <span class="card-number">01</span>
+        <div class="solutions-grid">
+          <article class="solution-card primary-solution">
+            <span class="solution-num">01</span>
+            <div class="solution-icon">⌬</div>
             <h3>Ingeniería e Integración</h3>
-            <p>Diseño técnico, integración de sistemas, soporte de implementación y resolución práctica de necesidades industriales.</p>
+            <p>Diseño técnico, arquitectura, especificaciones e integración entre equipos, procesos y sistemas.</p>
           </article>
-          <article class="info-card featured-card">
-            <span class="card-number">02</span>
+
+          <article class="solution-card">
+            <span class="solution-num">02</span>
+            <div class="solution-icon">◉</div>
             <h3>CYSI Brain</h3>
-            <p>Capacidades digitales para ordenar información, automatizar flujos y apoyar la gestión operacional con IA.</p>
+            <p>Datos, automatizaciones e IA para ordenar la operación y convertir información en decisiones.</p>
           </article>
-          <article class="info-card featured-card">
-            <span class="card-number">03</span>
+
+          <article class="solution-card">
+            <span class="solution-num">03</span>
+            <div class="solution-icon">⌁</div>
             <h3>Automatización Industrial</h3>
-            <p>Soluciones con PLC, tableros, sensórica, monitoreo, control y visualización de variables críticas.</p>
+            <p>PLC, supervisión, lógica, secuencias, control y visualización de procesos.</p>
           </article>
-          <article class="info-card">
-            <span class="card-number">04</span>
+
+          <article class="solution-card">
+            <span class="solution-num">04</span>
+            <div class="solution-icon">◎</div>
             <h3>Instrumentación</h3>
-            <p>Selección, integración, ajuste y soporte para sensores, medición y adquisición de datos de proceso.</p>
+            <p>Selección, integración, medición y acondicionamiento de variables de proceso.</p>
           </article>
-          <article class="info-card">
-            <span class="card-number">05</span>
+
+          <article class="solution-card">
+            <span class="solution-num">05</span>
+            <div class="solution-icon">▤</div>
             <h3>Documentación Técnica</h3>
-            <p>Planos, esquemas, respaldo documental y orden técnico para proyectos, mantenimiento y operación.</p>
+            <p>Planos, esquemas, especificaciones, trazabilidad y respaldo para el ciclo de vida técnico.</p>
           </article>
-          <article class="info-card">
-            <span class="card-number">06</span>
+
+          <article class="solution-card">
+            <span class="solution-num">06</span>
+            <div class="solution-icon">◒</div>
             <h3>Energía</h3>
-            <p>Apoyo en soluciones energéticas, evaluación técnica y búsqueda de eficiencia aplicada a procesos industriales.</p>
+            <p>Evaluación, eficiencia y soluciones energéticas con enfoque en desempeño y sostenibilidad.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section section-alt" id="ventajas">
+    <section class="section control-section" id="vision">
       <div class="container">
-        <div class="section-head">
-          <span class="section-tag">POR QUÉ CYSI</span>
-          <h2>Ingeniería conectada con la realidad operacional</h2>
-          <p>No buscamos vender tecnología aislada. Partimos del problema, integramos lo necesario y dejamos una solución comprensible, documentada y escalable.</p>
+        <div class="section-heading heading-row">
+          <div>
+            <span class="eyebrow">NUESTRA VISIÓN TÉCNICA</span>
+            <h2>Del modelo matemático al proceso real.</h2>
+          </div>
+          <p>Control, simulación, comunicaciones y visualización trabajando como un solo sistema.</p>
         </div>
 
-        <div class="benefit-grid">
-          <article class="benefit-card">
-            <div class="benefit-icon">01</div>
-            <h3>Visión integral</h3>
-            <p>Unimos ingeniería, control, instrumentación, datos y automatización en una misma solución.</p>
+        <div class="technical-grid">
+          <article class="technical-card">
+            <div class="technical-card-top">
+              <span>CONTROL DE PROCESOS</span>
+              <code>PID</code>
+            </div>
+            <div class="formula">C(s)=K<sub>p</sub> + K<sub>i</sub>/s + K<sub>d</sub>s</div>
+            <svg viewBox="0 0 320 160" class="chart-svg" aria-label="Respuesta al escalón">
+              <g class="light-grid"><path d="M20 30H300M20 65H300M20 100H300M20 135H300"/><path d="M70 20V145M120 20V145M170 20V145M220 20V145M270 20V145"/></g>
+              <path class="step-ref" d="M20 126H55V70H300"/>
+              <path class="step-response" d="M20 126 C52 126,49 126,58 110 C74 73,88 42,110 55 C129 68,127 85,150 78 C172 72,185 66,205 71 C234 78,257 71,300 70" />
+            </svg>
+            <p>Modelado y ajuste para procesos más estables, rápidos y eficientes.</p>
           </article>
-          <article class="benefit-card">
-            <div class="benefit-icon">02</div>
-            <h3>Soluciones a escala real</h3>
-            <p>La tecnología se dimensiona según la operación, presupuesto y etapa de madurez del cliente.</p>
+
+          <article class="technical-card equation-panel">
+            <div class="technical-card-top"><span>MODELOS MATEMÁTICOS</span><code>STATE SPACE</code></div>
+            <div class="math-block">
+              <code>ẋ(t) = Ax(t) + Bu(t)</code>
+              <code>y(t) = Cx(t) + Du(t)</code>
+              <code>G(s) = K(τs+1)/(s²+2ζωₙs+ωₙ²)</code>
+            </div>
+            <p>Representamos el comportamiento del sistema antes de intervenir el proceso real.</p>
           </article>
-          <article class="benefit-card">
-            <div class="benefit-icon">03</div>
-            <h3>Trazabilidad y documentación</h3>
-            <p>Buscamos que el conocimiento quede respaldado y pueda mantenerse, auditarse y crecer en el tiempo.</p>
+
+          <article class="technical-card network-panel">
+            <div class="technical-card-top"><span>COMUNICACIONES</span><code>OT / IT</code></div>
+            <div class="network-map">
+              <span class="node hub">OPC UA</span>
+              <span class="node n1">Modbus</span>
+              <span class="node n2">MQTT</span>
+              <span class="node n3">EtherNet/IP</span>
+              <span class="node n4">PROFINET</span>
+              <i class="link l1"></i><i class="link l2"></i><i class="link l3"></i><i class="link l4"></i>
+            </div>
+            <p>Integramos control, supervisión y datos sin perder trazabilidad del origen.</p>
           </article>
-          <article class="benefit-card">
-            <div class="benefit-icon">04</div>
-            <h3>Implementación progresiva</h3>
-            <p>Podemos comenzar con un piloto controlado, validar valor y escalar sin sobredimensionar la inversión inicial.</p>
+
+          <article class="technical-card matlab-panel">
+            <div class="technical-card-top"><span>VISUALIZACIÓN DE DATOS</span><code>T(x,y)</code></div>
+            <div class="surface-wrap" aria-label="Superficie tipo MATLAB">
+              <svg viewBox="0 0 320 180">
+                <defs>
+                  <linearGradient id="matlabGradient" x1="0" x2="1" y1="1" y2="0">
+                    <stop offset="0" stop-color="#1f56d8"/>
+                    <stop offset=".28" stop-color="#23c9e4"/>
+                    <stop offset=".52" stop-color="#73df78"/>
+                    <stop offset=".74" stop-color="#f5d84b"/>
+                    <stop offset="1" stop-color="#ef5a43"/>
+                  </linearGradient>
+                </defs>
+                <path d="M25 135 L70 120 L110 128 L150 95 L190 108 L235 55 L295 80 L295 142 L25 142 Z" fill="url(#matlabGradient)" opacity=".94"/>
+                <g fill="none" stroke="#ffffff" stroke-opacity=".52" stroke-width="1">
+                  <path d="M25 135L70 120L110 128L150 95L190 108L235 55L295 80"/>
+                  <path d="M35 142L80 128L120 136L160 105L200 118L245 66L295 91"/>
+                  <path d="M48 142L92 134L133 142L173 116L213 128L257 78L295 103"/>
+                  <path d="M25 135L35 142M70 120L80 128M110 128L120 136M150 95L160 105M190 108L200 118M235 55L245 66M295 80L295 103"/>
+                </g>
+              </svg>
+            </div>
+            <p>Gráficos claros para detectar comportamiento, tendencia, eficiencia y anomalías.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section section-alt" id="proyectos">
+    <section class="section projects-section" id="proyectos">
       <div class="container">
-        <div class="section-head">
-          <span class="section-tag">PROYECTOS DESTACADOS</span>
-          <h2>Experiencia aplicada en terreno</h2>
-          <p>Una muestra inicial del tipo de trabajos que respaldan la experiencia técnica de CYSI.</p>
+        <div class="section-heading heading-row">
+          <div>
+            <span class="eyebrow">PROYECTOS DESTACADOS</span>
+            <h2>Experiencia técnica aplicada.</h2>
+          </div>
+          <p>Trabajos reales que conectan diseño, control, medición y ejecución en terreno.</p>
         </div>
 
-        <div class="project-grid">
+        <div class="projects-grid">
           <article class="project-card">
-            <div class="project-media">
-              <img src="proyecto-vehice.png" alt="Proyecto VEHICE con tablero, PLC y visualización de variables" />
-            </div>
-            <div class="project-content">
-              <div class="project-kicker">VEHICE · Laboratorio de histopatología</div>
-              <h3>Integración de tablero, PLC y visualización de datos</h3>
-              <p>
-                Desarrollo e integración de una solución con PLC Siemens LOGO!, transmisores, sensórica y visualización de variables
-                para monitoreo de oxígeno disuelto, ORP, temperatura, conductividad, pH y turbidez.
-              </p>
-              <ul>
-                <li>Integración de hardware de control y medición.</li>
-                <li>Adquisición y visualización de datos de proceso.</li>
-                <li>Interfaz operativa orientada a seguimiento y control.</li>
-              </ul>
+            <img src="proyecto-vehice.png" alt="Proyecto VEHICE laboratorio de histopatología" />
+            <div class="project-body">
+              <span class="project-label">VEHICE · LABORATORIO DE HISTOPATOLOGÍA</span>
+              <h3>Control, sensórica y visualización de variables</h3>
+              <p>Integración con PLC Siemens LOGO!, transmisores y monitoreo de oxígeno disuelto, ORP, temperatura, conductividad, pH y turbidez.</p>
+              <div class="pill-row"><span>Automatización</span><span>PLC</span><span>Visualización</span></div>
             </div>
           </article>
 
           <article class="project-card">
-            <div class="project-media">
-              <img src="proyecto-chiller.png" alt="Equipo chiller industrial con panel de control" />
-            </div>
-            <div class="project-content">
-              <div class="project-kicker">CHILLER INDUSTRIAL</div>
-              <h3>Intervención técnica y control de proceso térmico</h3>
-              <p>
-                Trabajo asociado a refrigeración industrial, diagnóstico funcional, operación del sistema y mejora del control de proceso,
-                incluyendo criterio técnico sobre componentes, maniobra y respuesta operacional.
-              </p>
-              <ul>
-                <li>Evaluación técnica de equipo de refrigeración.</li>
-                <li>Enfoque en control, operación y continuidad del proceso.</li>
-                <li>Experiencia aplicada en soluciones térmicas industriales.</li>
-              </ul>
+            <img src="proyecto-chiller.png" alt="Proyecto chiller industrial" />
+            <div class="project-body">
+              <span class="project-label">CHILLER INDUSTRIAL</span>
+              <h3>Control y operación de proceso térmico</h3>
+              <p>Diagnóstico técnico e intervención orientada a operación, control, continuidad y mejora funcional del equipo.</p>
+              <div class="pill-row"><span>Refrigeración</span><span>Control</span><span>Eficiencia</span></div>
             </div>
           </article>
 
           <article class="project-card">
-            <div class="project-media">
-              <img src="proyecto-switchgear.png" alt="Equipo de medición para mantención y pruebas eléctricas de switchgear" />
-            </div>
-            <div class="project-content">
-              <div class="project-kicker">MANTENCIÓN ELÉCTRICA · SWITCHGEAR</div>
-              <h3>Pruebas y medición de respuesta eléctrica</h3>
-              <p>
-                Participación en mantención y diagnóstico eléctrico con instrumentación especializada para verificación de tiempos de cierre,
-                corriente máxima y comportamiento de maniobra en equipos de potencia.
-              </p>
-              <ul>
-                <li>Medición y verificación de parámetros eléctricos.</li>
-                <li>Apoyo a mantención de equipos de maniobra.</li>
-                <li>Enfoque en confiabilidad y respaldo técnico.</li>
-              </ul>
+            <img src="proyecto-switchgear.png" alt="Mantención y medición eléctrica de switchgear" />
+            <div class="project-body">
+              <span class="project-label">SWITCHGEAR · MANTENCIÓN ELÉCTRICA</span>
+              <h3>Medición de respuesta y diagnóstico</h3>
+              <p>Verificación de tiempos de cierre, corriente máxima y respuesta de maniobra mediante instrumentación especializada.</p>
+              <div class="pill-row"><span>Medición</span><span>Diagnóstico</span><span>Confiabilidad</span></div>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="brain">
-      <div class="container split-grid">
+    <section class="brain-section" id="brain">
+      <div class="brain-geometry" aria-hidden="true"></div>
+      <div class="container brain-grid">
+        <div class="brain-copy">
+          <span class="eyebrow eyebrow-dark">CYSI BRAIN</span>
+          <h2>Conectamos datos, procesos y personas para una operación más inteligente.</h2>
+          <p>Un cerebro digital que integra fuentes operacionales, automatiza flujos y entrega información trazable para apoyar decisiones.</p>
+          <div class="hero-actions">
+            <a class="btn btn-copper" href="#contacto">Conocer CYSI Brain →</a>
+            <a class="btn btn-ghost-light" href="#proyectos">Ver experiencia</a>
+          </div>
+        </div>
+
+        <div class="brain-flow">
+          <div class="flow-box"><b>01</b><strong>Datos</strong><span>ERP, documentos, sensores, APIs</span></div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-box"><b>02</b><strong>Modelos</strong><span>Contexto, reglas y analítica</span></div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-box"><b>03</b><strong>Inteligencia</strong><span>Automatización e IA operativa</span></div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-box result-box"><b>04</b><strong>Resultados</strong><span>Visibilidad y mejores decisiones</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reasons-section" id="nosotros">
+      <div class="container">
+        <div class="section-heading heading-row compact-heading">
+          <div>
+            <span class="eyebrow">POR QUÉ CYSI</span>
+            <h2>Ingeniería con criterio de sistema.</h2>
+          </div>
+        </div>
+
+        <div class="reasons-grid">
+          <article><span>⌬</span><div><h3>Criterio técnico</h3><p>Soluciones con fundamento de ingeniería y visión de largo plazo.</p></div></article>
+          <article><span>⎔</span><div><h3>Integración práctica</h3><p>Conectamos tecnología, personas y procesos de forma simple y efectiva.</p></div></article>
+          <article><span>▤</span><div><h3>Trazabilidad documental</h3><p>Información clara, ordenada y utilizable durante todo el ciclo de vida.</p></div></article>
+          <article><span>↗</span><div><h3>Evolución progresiva</h3><p>Implementamos por etapas para crecer sin sobredimensionar la solución.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-banner" id="contacto">
+      <div class="contact-bg" aria-hidden="true"></div>
+      <div class="container contact-content">
         <div>
-          <span class="section-tag">CYSI BRAIN</span>
-          <h2>IA y operaciones digitales para empresas</h2>
-          <p>
-            CYSI Brain es la línea de desarrollo orientada a conectar procesos, datos y automatizaciones
-            para ordenar la operación y apoyar la toma de decisiones.
-          </p>
-          <p>
-            El enfoque combina n8n, bases de datos, conectores, trazabilidad y asistentes operativos,
-            con despliegue progresivo según madurez y necesidad del cliente.
-          </p>
+          <span class="eyebrow eyebrow-dark">HABLEMOS</span>
+          <h2>Cuéntanos el problema.<br><span>No necesitas tener definida la solución.</span></h2>
+          <p>Podemos analizarlo, entender el proceso y construir contigo una ruta técnica viable.</p>
         </div>
-
-        <div class="brain-panel">
-          <div class="brain-item">
-            <strong>Objetivo</strong>
-            <span>Transformar datos operativos en decisiones útiles.</span>
-          </div>
-          <div class="brain-item">
-            <strong>Aplicación</strong>
-            <span>Ventas, postventa, documentos, stock, consultas y control.</span>
-          </div>
-          <div class="brain-item">
-            <strong>Estado</strong>
-            <span>Piloto validado en desarrollo progresivo.</span>
-          </div>
-          <div class="brain-item">
-            <strong>Caso piloto</strong>
-            <span>Punto Frío.</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt pilot-section" id="piloto">
-      <div class="container">
-        <div class="section-head">
-          <span class="section-tag">CASO PILOTO · PUNTO FRÍO</span>
-          <h2>De datos dispersos a una operación conectada</h2>
-          <p>CYSI Brain se está validando en un entorno empresarial real, integrando información comercial y operacional para construir una base confiable de consulta, automatización y análisis.</p>
-        </div>
-
-        <div class="pilot-grid">
-          <div class="pilot-flow">
-            <div class="flow-node">
-              <small>ORIGEN</small>
-              <strong>Bsale</strong>
-              <span>Clientes, documentos, stock y variantes</span>
-            </div>
-            <div class="flow-arrow">→</div>
-            <div class="flow-node">
-              <small>ORQUESTACIÓN</small>
-              <strong>n8n</strong>
-              <span>Sincronización, eventos y automatizaciones</span>
-            </div>
-            <div class="flow-arrow">→</div>
-            <div class="flow-node">
-              <small>MEMORIA</small>
-              <strong>PostgreSQL</strong>
-              <span>Datos estructurados, auditoría y trazabilidad</span>
-            </div>
-            <div class="flow-arrow">→</div>
-            <div class="flow-node accent-node">
-              <small>CAPACIDAD</small>
-              <strong>CYSI Brain</strong>
-              <span>Consultas, alertas, KPIs y apoyo a decisiones</span>
-            </div>
-          </div>
-
-          <div class="pilot-results">
-            <article class="result-card">
-              <strong>Integraciones reales</strong>
-              <span>Sincronización progresiva de datos comerciales y operacionales.</span>
-            </article>
-            <article class="result-card">
-              <strong>Información auditable</strong>
-              <span>Registros, estados de sincronización y eventos con trazabilidad.</span>
-            </article>
-            <article class="result-card">
-              <strong>Base para inteligencia</strong>
-              <span>Preparación de consultas, KPIs, alertas y automatizaciones.</span>
-            </article>
-            <article class="result-card">
-              <strong>Escalabilidad</strong>
-              <span>Arquitectura pensada para sumar nuevas fuentes y capacidades.</span>
-            </article>
-          </div>
-        </div>
-
-        <div class="pilot-note">
-          <strong>Enfoque del piloto:</strong> demostrar valor con datos reales antes de escalar la solución a nuevas áreas o clientes.
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="proceso">
-      <div class="container">
-        <div class="section-head">
-          <span class="section-tag">CÓMO TRABAJAMOS</span>
-          <h2>Proceso simple y orientado a resultados</h2>
-        </div>
-
-        <div class="steps-grid">
-          <article class="step-card">
-            <span>01</span>
-            <h3>Diagnóstico</h3>
-            <p>Levantamos el problema, contexto operativo y restricciones técnicas.</p>
-          </article>
-          <article class="step-card">
-            <span>02</span>
-            <h3>Ingeniería</h3>
-            <p>Definimos la solución, integración requerida y respaldo técnico documental.</p>
-          </article>
-          <article class="step-card">
-            <span>03</span>
-            <h3>Implementación</h3>
-            <p>Ejecutamos, integramos y validamos la solución en función del objetivo.</p>
-          </article>
-          <article class="step-card">
-            <span>04</span>
-            <h3>Seguimiento</h3>
-            <p>Entregamos soporte, continuidad y visión de mejora para las siguientes etapas.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="nosotros">
-      <div class="container split-grid about-section">
-        <div>
-          <span class="section-tag">NOSOTROS</span>
-          <h2>Técnica, orden y visión de crecimiento</h2>
-          <p>
-            CYSI busca posicionarse como una empresa capaz de unir ingeniería aplicada, integración técnica y herramientas digitales,
-            con una forma de trabajo profesional, clara y enfocada en resolver problemas reales.
-          </p>
-          <p>
-            La propuesta combina experiencia en automatización, instrumentación, control, mantenimiento, documentación y desarrollo de nuevas capacidades.
-          </p>
-        </div>
-
-        <div class="about-box">
-          <ul>
-            <li><strong>Empresa:</strong> Control y Sistemas Industriales SpA</li>
-            <li><strong>Nombre comercial:</strong> CYSI</li>
-            <li><strong>Correo:</strong> <a href="mailto:MagnusB.R@cysi.cl">MagnusB.R@cysi.cl</a></li>
-            <li><strong>WhatsApp:</strong> <a href="https://wa.me/56954393441" target="_blank" rel="noopener">+56 9 5439 3441</a></li>
-            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/company/144910906" target="_blank" rel="noopener">Página de empresa</a></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="section contact-section" id="contacto">
-      <div class="container contact-box contact-box-strong">
-        <div class="contact-copy">
-          <span class="section-tag">CONVERSEMOS</span>
-          <h2>Cuéntanos el problema. No necesitas tener definida la solución.</h2>
-          <p>Podemos partir por una conversación técnica breve, revisar tu necesidad y definir si corresponde ingeniería, automatización, instrumentación o una solución digital.</p>
-          <div class="contact-trust">
-            <span>✓ Primera conversación técnica</span>
-            <span>✓ Enfoque gradual</span>
-            <span>✓ Sin sobredimensionar la solución</span>
-          </div>
-        </div>
-        <div class="contact-actions contact-actions-stack">
-          <a class="btn btn-primary" href="https://wa.me/56954393441?text=Hola%20CYSI,%20quisiera%20conversar%20sobre%20un%20proyecto" target="_blank" rel="noopener">Hablar por WhatsApp</a>
-          <a class="btn btn-secondary" href="mailto:MagnusB.R@cysi.cl?subject=Consulta%20de%20proyecto%20-%20CYSI">Enviar correo</a>
-          <a class="text-link" href="https://www.linkedin.com/company/144910906" target="_blank" rel="noopener">Visitar LinkedIn de CYSI →</a>
+        <div class="contact-buttons">
+          <a class="btn btn-whatsapp" href="https://wa.me/56954393441" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn btn-mail" href="mailto:MagnusB.R@cysi.cl">Email</a>
         </div>
       </div>
     </section>
   </main>
 
-  <a class="floating-wa" href="https://wa.me/56954393441" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">WA</a>
-
   <footer class="site-footer">
-    <div class="container footer-wrap">
-      <p>© <span id="year"></span> CYSI · Control y Sistemas Industriales SpA</p>
-      <p>Ingeniería e integración de sistemas</p>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="brand footer-brandline"><img src="logo-cysi.png" alt="CYSI"><span class="brand-word">CYSI</span></div>
+        <p>Sistemas que conectan ingeniería, datos y operación.</p>
+      </div>
+      <div>
+        <h4>Soluciones</h4>
+        <a href="#soluciones">Ingeniería e integración</a>
+        <a href="#brain">CYSI Brain</a>
+        <a href="#soluciones">Automatización</a>
+        <a href="#soluciones">Instrumentación</a>
+      </div>
+      <div>
+        <h4>Empresa</h4>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="https://www.linkedin.com/company/144910906" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <a href="mailto:MagnusB.R@cysi.cl">MagnusB.R@cysi.cl</a>
+        <a href="https://wa.me/56954393441" target="_blank" rel="noopener">+56 9 5439 3441</a>
+        <span>Chile</span>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> Control y Sistemas Industriales SpA</span>
+      <span class="mono">CYSI / ENGINEERING SYSTEMS</span>
     </div>
   </footer>
 
