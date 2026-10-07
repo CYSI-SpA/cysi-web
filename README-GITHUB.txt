@@ -26,3 +26,6 @@ PARA REEMPLAZAR LA WEB ACTUAL EN GITHUB
 IMPORTANTE
 No subas la carpeta CYSI_WEB_V4_GITHUB como una carpeta dentro del repo.
 Sube SU CONTENIDO directamente a la raíz.
+
+
+V5: integra nuevo logo CYSI, nueva imagen VEHICE y actualización de CYSI Brain con íconos por etapa.
