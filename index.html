@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CYSI | Ingeniería, automatización y soluciones digitales</title>
-  <meta name="description" content="CYSI integra ingeniería, automatización y soluciones digitales para optimizar procesos industriales." />
-  <meta name="theme-color" content="#132226" />
+  <title>CYSI | Ingeniería, automatización e inteligencia</title>
+  <meta name="description" content="CYSI integra ingeniería, automatización y soluciones digitales para optimizar procesos. Sistemas físicos y digitales, control, datos e inteligencia operacional." />
+  <meta name="theme-color" content="#f3f8fb" />
   <link rel="icon" type="image/png" href="favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,11 +23,12 @@
       <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
 
       <nav class="main-nav" id="mainNav">
-        <a href="#soluciones">Soluciones</a>
+        <a href="#lineas">Líneas</a>
+        <a href="#sistema">Sistema</a>
         <a href="#vision">Control</a>
         <a href="#proyectos">Proyectos</a>
         <a href="#brain">CYSI Brain</a>
-        <a href="#nosotros">Nosotros</a>
+        <a href="#metodo">Método</a>
         <a class="nav-cta" href="#contacto">Hablemos →</a>
       </nav>
     </div>
@@ -35,284 +36,263 @@
 
   <main>
     <section class="hero" id="inicio">
-      <div class="hero-image" aria-hidden="true"></div>
-      <div class="hero-overlay" aria-hidden="true"></div>
-      <div class="geometry geometry-a" aria-hidden="true"></div>
-      <div class="geometry geometry-b" aria-hidden="true"></div>
-
-      <div class="container hero-layout">
-        <div class="hero-copy">
-          <div class="kicker">INGENIERÍA · CONTROL · DATOS · EFICIENCIA</div>
-          <div class="hero-brand-row">
-            <img src="logo-cysi.png" alt="CYSI" class="hero-logo" />
-            <span class="hero-brand-name">CYSI</span>
+      <div class="hero-orbit hero-orbit-a" aria-hidden="true"></div>
+      <div class="hero-orbit hero-orbit-b" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="kicker">INGENIERÍA · AUTOMATIZACIÓN · INTELIGENCIA</div>
+          <div class="hero-brandline">
+            <img src="logo-cysi.png" alt="CYSI" />
+            <span>CYSI</span>
           </div>
-
           <h1>Integramos ingeniería, automatización y soluciones digitales para optimizar procesos.</h1>
           <p>
-            Diseñamos sistemas que conectan equipos, datos y personas para lograr operaciones más estables,
-            medibles, eficientes y preparadas para evolucionar.
+            Abordamos máquinas, control, software, información y personas como un solo sistema.
+            Diseñamos soluciones para ver mejor la operación, conectar sus partes y actuar con evidencia.
           </p>
-
           <div class="hero-actions">
             <a class="btn btn-copper" href="https://wa.me/56954393441" target="_blank" rel="noopener">Conversemos →</a>
-            <a class="btn btn-ghost" href="#soluciones">Ver soluciones</a>
+            <a class="btn btn-outline" href="#lineas">Conocer CYSI</a>
           </div>
-
-          <div class="hero-tags">
-            <span>PLC / SCADA</span>
-            <span>Modelado</span>
-            <span>Instrumentación</span>
-            <span>IA aplicada</span>
+          <div class="hero-signals">
+            <span>OT</span><i></i><span>IT</span><i></i><span>IA</span>
+            <small>operación física → información conectada → decisiones con contexto</small>
           </div>
         </div>
 
-        <div class="hero-technical" aria-label="Panel técnico CYSI">
-          <div class="tech-glass response-card">
-            <div class="tech-card-head">
-              <span>CONTROL DE PROCESOS</span>
-              <code>G(s)=Y(s)/U(s)</code>
-            </div>
-            <svg viewBox="0 0 360 150" role="img" aria-label="Respuesta de un sistema de control">
-              <defs>
-                <linearGradient id="lineCyan" x1="0" x2="1">
-                  <stop offset="0" stop-color="#CFEFF7"/>
-                  <stop offset="1" stop-color="#5FD9EA"/>
-                </linearGradient>
-              </defs>
-              <g class="grid-lines">
-                <path d="M20 25H340M20 60H340M20 95H340M20 130H340" />
-                <path d="M60 15V135M120 15V135M180 15V135M240 15V135M300 15V135" />
-              </g>
-              <path class="ref-line" d="M20 72H340" />
-              <path class="response-line" d="M20 132 C55 130,60 34,98 40 C132 46,128 88,164 80 C198 73,196 66,230 71 C267 77,287 72,340 72" />
+        <div class="hero-media reveal" aria-label="Sala de control e industria conectada">
+          <img src="hero-cysi.png" alt="Sala de control con visualización industrial y paisaje natural" />
+          <div class="hero-hud hud-top">
+            <span class="hud-label">PROCESS STATE</span>
+            <b>ESTABLE</b>
+            <small>SP 72.0 · PV 71.8</small>
+          </div>
+          <div class="hero-hud hud-bottom">
+            <svg viewBox="0 0 220 74" aria-hidden="true">
+              <path class="hud-grid" d="M0 18H220M0 37H220M0 56H220M44 0V74M88 0V74M132 0V74M176 0V74"></path>
+              <path class="hud-ref" d="M4 44H216"></path>
+              <path class="hud-curve" d="M4 67 C30 67,35 14,65 21 C90 27,88 51,114 45 C140 39,147 43,168 44 C188 45,199 44,216 44"></path>
             </svg>
-            <div class="legend"><span class="legend-cyan">● Proceso</span><span class="legend-copper">● Referencia</span></div>
-          </div>
-
-          <div class="tech-glass protocol-card">
-            <span class="mini-title">PROTOCOLOS INDUSTRIALES</span>
-            <div class="protocols">
-              <span>Modbus</span><span>OPC UA</span><span>MQTT</span><span>EtherNet/IP</span><span>PROFINET</span>
-            </div>
-          </div>
-
-          <div class="tech-glass equation-card">
-            <span class="mini-title">CONTROL</span>
-            <code>u(t)=K<sub>p</sub>e(t)+K<sub>i</sub>∫e(t)dt+K<sub>d</sub>de/dt</code>
+            <code>ζ=0.72 · τ=4.8s · PID AUTO</code>
           </div>
         </div>
-      </div>
-
-      <div class="hero-service-strip container">
-        <div><span class="strip-icon">⌬</span><b>Ingeniería</b><small>Integración de sistemas</small></div>
-        <div><span class="strip-icon">⌁</span><b>Control</b><small>Estabilidad y respuesta</small></div>
-        <div><span class="strip-icon">◉</span><b>Instrumentación</b><small>Datos confiables</small></div>
-        <div><span class="strip-icon">⌘</span><b>Digital</b><small>Automatización e IA</small></div>
-        <div><span class="strip-icon">◒</span><b>Eficiencia</b><small>Energía y sostenibilidad</small></div>
       </div>
     </section>
 
-    <section class="section solutions-section" id="soluciones">
-      <div class="container">
-        <div class="section-heading heading-row">
-          <div>
-            <span class="eyebrow">SOLUCIONES</span>
-            <h2>Ingeniería real para operaciones más inteligentes.</h2>
-          </div>
-          <p>Partimos por el problema técnico y construimos una solución integrable, medible y escalable.</p>
-        </div>
-
-        <div class="solutions-grid">
-          <article class="solution-card primary-solution sol-eng">
-            <div class="solution-art" aria-hidden="true">
-              <svg viewBox="0 0 140 140"><path d="M35 35h28v28H35zM77 35h28v28H77zM56 77h28v28H56z"></path><path d="M63 49h14M91 49h14M49 63v14M91 63v14M70 77V63M84 91h21"></path></svg>
-            </div>
-            <span class="solution-num">01</span>
-            <div class="solution-icon-badge">⌬</div>
-            <h3>Ingeniería e Integración</h3>
-            <p>Diseño técnico, arquitectura, especificaciones e integración entre equipos, procesos y sistemas.</p>
-          </article>
-
-          <article class="solution-card sol-brain">
-            <div class="solution-art" aria-hidden="true">
-              <svg viewBox="0 0 140 140"><path d="M52 31c-13 0-24 11-24 24 0 4 .9 7.7 2.6 11.1C26 70.8 24 76 24 81.6 24 92.3 32.7 101 43.4 101H55V31h-3Z"></path><path d="M88 31c13 0 24 11 24 24 0 4-.9 7.7-2.6 11.1C114 70.8 116 76 116 81.6 116 92.3 107.3 101 96.6 101H85V31h3Z"></path><path d="M55 48h30M55 64h30M55 80h30"></path><circle cx="31" cy="81" r="5"></circle><circle cx="109" cy="52" r="5"></circle><circle cx="70" cy="109" r="5"></circle><path d="M36 80h19M104 56L85 64M70 104V90"></path></svg>
-            </div>
-            <span class="solution-num">02</span>
-            <div class="solution-icon-badge">◉</div>
-            <h3>CYSI Brain</h3>
-            <p>Datos, automatizaciones e IA para ordenar la operación y convertir información en decisiones.</p>
-          </article>
-
-          <article class="solution-card sol-auto">
-            <div class="solution-art" aria-hidden="true">
-              <svg viewBox="0 0 140 140"><path d="M34 30h72v80H34z"></path><path d="M46 44h20M46 58h20M46 72h20M46 86h20M79 44h15M79 58h15M79 72h15M79 86h15"></path><circle cx="98" cy="106" r="7"></circle><path d="M98 99v14M91 106h14"></path></svg>
-            </div>
-            <span class="solution-num">03</span>
-            <div class="solution-icon-badge">⌁</div>
-            <h3>Automatización Industrial</h3>
-            <p>PLC, supervisión, lógica, secuencias, control y visualización de procesos.</p>
-          </article>
-
-          <article class="solution-card sol-inst">
-            <div class="solution-art" aria-hidden="true">
-              <svg viewBox="0 0 140 140"><circle cx="70" cy="70" r="28"></circle><path d="M70 70l18-12"></path><path d="M70 42V34M98 70h8M70 98v8M42 70h-8M88 52l6-6M88 88l6 6M52 52l-6-6M52 88l-6 6"></path></svg>
-            </div>
-            <span class="solution-num">04</span>
-            <div class="solution-icon-badge">◎</div>
-            <h3>Instrumentación</h3>
-            <p>Selección, integración, medición y acondicionamiento de variables de proceso.</p>
-          </article>
-
-          <article class="solution-card sol-docs">
-            <div class="solution-art" aria-hidden="true">
-              <svg viewBox="0 0 140 140"><path d="M42 28h44l12 12v72H42z"></path><path d="M86 28v16h16M54 60h32M54 74h32M54 88h22"></path><path d="M49 49l8-6 9 7 8-8"></path></svg>
-            </div>
-            <span class="solution-num">05</span>
-            <div class="solution-icon-badge">▤</div>
-            <h3>Documentación Técnica</h3>
-            <p>Planos, esquemas, especificaciones, trazabilidad y respaldo para el ciclo de vida técnico.</p>
-          </article>
-
-          <article class="solution-card sol-energy">
-            <div class="solution-art" aria-hidden="true">
-              <svg viewBox="0 0 140 140"><path d="M70 32c18 0 33 15 33 33 0 24-21 40-33 43-12-3-33-19-33-43 0-18 15-33 33-33Z"></path><path d="M70 44 58 74h13l-8 22 20-30H70l8-22Z"></path></svg>
-            </div>
-            <span class="solution-num">06</span>
-            <div class="solution-icon-badge">◒</div>
-            <h3>Energía</h3>
-            <p>Evaluación, eficiencia y soluciones energéticas con enfoque en desempeño y sostenibilidad.</p>
-          </article>
-        </div></div>
+    <section class="signal-band" aria-label="Punto de partida">
+      <div class="container signal-grid">
+        <div><span>01</span><b>Fragmentación</b><small>equipos, software e información aislados</small></div>
+        <div><span>02</span><b>Falta de visibilidad</b><small>datos disponibles, pero sin contexto operacional</small></div>
+        <div><span>03</span><b>Reacción tardía</b><small>decisiones cuando el impacto ya ocurrió</small></div>
+        <div class="signal-result"><b>CYSI</b><small>conecta · observa · automatiza · aprende</small></div>
       </div>
     </section>
 
-    <section class="section control-section" id="vision">
+    <section class="section lines-section" id="lineas">
       <div class="container">
-        <div class="section-heading heading-row">
+        <div class="section-head split-head reveal">
           <div>
-            <span class="eyebrow">NUESTRA VISIÓN TÉCNICA</span>
-            <h2>Del modelo matemático al proceso real.</h2>
+            <span class="eyebrow">LÍNEAS DE DESARROLLO</span>
+            <h2>Cuatro líneas. Un mismo sistema.</h2>
           </div>
-          <p>Control, simulación, comunicaciones y visualización trabajando como un solo sistema.</p>
+          <p>
+            CYSI evoluciona desde la ingeniería de planta hasta la inteligencia empresarial y la creación de productos,
+            manteniendo una misma lógica: comprender el sistema antes de elegir la tecnología.
+          </p>
         </div>
 
-        <div class="technical-grid">
-          <article class="technical-card response-panel">
-            <div class="technical-card-top">
-              <span>CONTROL DE PROCESOS</span>
-              <code>PID + FEEDBACK</code>
-            </div>
-            <div class="formula">u(t)=K<sub>p</sub>e(t)+K<sub>i</sub>∫e(t)dt+K<sub>d</sub>de(t)/dt</div>
-            <svg viewBox="0 0 320 170" class="chart-svg" aria-label="Respuesta al escalón estilo MATLAB">
-              <g class="light-grid"><path d="M20 30H300M20 60H300M20 90H300M20 120H300M20 150H300"/><path d="M60 20V155M100 20V155M140 20V155M180 20V155M220 20V155M260 20V155"/></g>
-              <path class="step-ref" d="M20 132H55V76H300"/>
-              <path class="step-response" d="M20 132 C40 132,48 132,58 111 C78 63,103 44,126 56 C145 66,145 85,165 82 C189 79,197 72,220 75 C250 79,274 76,300 76" />
-              <path class="step-response-2" d="M20 132 C40 132,54 132,64 116 C84 82,108 62,128 67 C146 71,154 79,173 78 C198 77,214 75,300 75" />
-              <path class="step-response-3" d="M20 132 C44 132,58 126,72 103 C95 66,122 61,147 70 C170 78,188 77,210 76 C244 74,266 75,300 75" />
-            </svg>
-            <div class="chart-legend"><span class="lg-process">● Ajuste</span><span class="lg-cyan">● Respuesta</span><span class="lg-ref">● Referencia</span></div>
-            <p>Modelado y ajuste para procesos más estables, rápidos y eficientes.</p>
-          </article>
-
-          <article class="technical-card equation-panel">
-            <div class="technical-card-top"><span>MODELOS MATEMÁTICOS</span><code>STATE SPACE · TRANSFER</code></div>
-            <div class="math-layout">
-              <div class="eq-row"><span class="eq-label">Estado</span><code>ẋ(t)=Ax(t)+Bu(t)</code></div>
-              <div class="eq-row"><span class="eq-label">Salida</span><code>y(t)=Cx(t)+Du(t)</code></div>
-              <div class="eq-row"><span class="eq-label">Transferencia</span><code>G(s)=rac{K(τs+1)}{s²+2ζωₙs+ωₙ²}</code></div>
-              <div class="eq-row"><span class="eq-label">Balance</span><code>m·ċ<sub>p</sub>·dT/dt=Q<sub>in</sub>-Q<sub>out</sub></code></div>
-            </div>
-            <p>Representamos el comportamiento del sistema antes de intervenir el proceso real.</p>
-          </article>
-
-          <article class="technical-card network-panel">
-            <div class="technical-card-top"><span>COMUNICACIONES</span><code>OT / IT / EDGE</code></div>
-            <div class="network-map network-map-rich">
-              <span class="node hub">OPC UA</span>
-              <span class="node n1">Modbus TCP</span>
-              <span class="node n2">MQTT</span>
-              <span class="node n3">EtherNet/IP</span>
-              <span class="node n4">PROFINET</span>
-              <span class="node n5">CANopen</span>
-              <span class="node n6">BACnet</span>
-              <span class="node n7">IEC 61850</span>
-              <span class="node n8">REST API</span>
-              <i class="link l1"></i><i class="link l2"></i><i class="link l3"></i><i class="link l4"></i><i class="link l5"></i><i class="link l6"></i><i class="link l7"></i><i class="link l8"></i>
-            </div>
-            <div class="protocol-cloud"><span>DNP3</span><span>SQL</span><span>CSV</span><span>RS-485</span><span>HTTP</span></div>
-            <p>Integramos control, supervisión y datos sin perder trazabilidad del origen.</p>
-          </article>
-
-          <article class="technical-card matlab-panel">
-            <div class="technical-card-top"><span>VISUALIZACIÓN DE DATOS</span><code>T(x,y) · HEATMAP</code></div>
-            <div class="surface-wrap" aria-label="Superficie tipo MATLAB mejorada">
-              <svg viewBox="0 0 320 200">
-                <defs>
-                  <linearGradient id="matlabGradient2" x1="0" x2="1" y1="1" y2="0">
-                    <stop offset="0" stop-color="#1f56d8"/>
-                    <stop offset=".22" stop-color="#23c9e4"/>
-                    <stop offset=".46" stop-color="#69e588"/>
-                    <stop offset=".7" stop-color="#f3d647"/>
-                    <stop offset="1" stop-color="#ef5a43"/>
-                  </linearGradient>
-                </defs>
-                <rect x="250" y="28" width="16" height="124" rx="8" fill="url(#matlabGradient2)" opacity=".9"></rect>
-                <g fill="none" stroke="#dbe6e8" stroke-opacity=".8" stroke-width="1">
-                  <path d="M30 150L89 131L145 139L202 104L250 115"/>
-                  <path d="M30 134L89 115L145 123L202 88L250 99"/>
-                  <path d="M30 118L89 99L145 107L202 72L250 83"/>
-                  <path d="M30 102L89 83L145 91L202 56L250 67"/>
-                  <path d="M30 86L89 67L145 75L202 40L250 51"/>
-                  <path d="M30 150L30 86M89 131L89 67M145 139L145 75M202 104L202 40M250 115L250 51"/>
-                </g>
-                <path d="M30 150L89 131L145 139L202 104L250 115L250 160L30 160Z" fill="url(#matlabGradient2)" opacity=".97"></path>
-                <path d="M30 134L89 115L145 123L202 88L250 99L250 115L202 104L145 139L89 131L30 150Z" fill="#4fc6df" opacity=".35"></path>
-                <path d="M30 118L89 99L145 107L202 72L250 83L250 99L202 88L145 123L89 115L30 134Z" fill="#72df77" opacity=".28"></path>
-                <path d="M30 102L89 83L145 91L202 56L250 67L250 83L202 72L145 107L89 99L30 118Z" fill="#f5d84b" opacity=".22"></path>
+        <div class="development-grid">
+          <article class="dev-card dev-a reveal">
+            <div class="dev-top"><span class="line-code">LÍNEA A</span><span class="line-dot"></span></div>
+            <div class="dev-visual" aria-hidden="true">
+              <svg viewBox="0 0 180 110">
+                <path class="dev-grid" d="M10 22H170M10 55H170M10 88H170M40 8V102M80 8V102M120 8V102M160 8V102"></path>
+                <path class="dev-curve" d="M10 88 C30 86,34 30,59 35 C82 40,79 67,101 60 C126 52,132 56,170 55"></path>
+                <circle cx="59" cy="35" r="4"></circle><circle cx="101" cy="60" r="4"></circle>
               </svg>
             </div>
-            <p>Gráficos claros para detectar comportamiento, tendencia, eficiencia y anomalías.</p>
+            <h3>Industrial Intelligence</h3>
+            <p>Observabilidad del proceso físico para aumentar confiabilidad, disponibilidad y capacidad de anticipación.</p>
+            <ul>
+              <li>PLC, sensores, variadores e instrumentación</li>
+              <li>IoT / edge, alarmas, históricos y dashboards</li>
+              <li>Automatización y control de procesos</li>
+            </ul>
+            <div class="dev-outcome">Resultado → operación visible y contextualizada</div>
           </article>
-        </div></div>
+
+          <article class="dev-card dev-b reveal">
+            <div class="dev-top"><span class="line-code">LÍNEA B</span><span class="line-dot"></span></div>
+            <div class="dev-visual" aria-hidden="true">
+              <svg viewBox="0 0 180 110">
+                <rect x="18" y="24" width="38" height="28" rx="7"></rect><rect x="124" y="24" width="38" height="28" rx="7"></rect><rect x="71" y="66" width="38" height="28" rx="7"></rect>
+                <path d="M56 38H124M90 52V66"></path><circle cx="90" cy="38" r="7"></circle>
+              </svg>
+            </div>
+            <h3>Digital Operations</h3>
+            <p>Integramos herramientas digitales existentes y automatizamos flujos para que la empresa opere con menos fricción.</p>
+            <ul>
+              <li>ERP, APIs, Workspace y plataformas existentes</li>
+              <li>Documentos, seguimiento, alertas e indicadores</li>
+              <li>Memoria corporativa e IA cuando el proceso está preparado</li>
+            </ul>
+            <div class="dev-outcome">Resultado → información ordenada, trazable y accesible</div>
+          </article>
+
+          <article class="dev-card dev-c reveal">
+            <div class="dev-top"><span class="line-code">LÍNEA C</span><span class="line-dot"></span></div>
+            <div class="dev-visual" aria-hidden="true">
+              <svg viewBox="0 0 180 110">
+                <path d="M44 83V38l46-22 46 22v45L90 104 44 83Z"></path><path d="M44 38l46 25 46-25M90 63v41"></path>
+                <circle cx="90" cy="16" r="5"></circle><circle cx="44" cy="83" r="5"></circle><circle cx="136" cy="83" r="5"></circle>
+              </svg>
+            </div>
+            <h3>CYSI Lab</h3>
+            <p>Convertimos problemas técnicos repetidos en soluciones modulares, prototipos y productos que puedan validarse antes de escalar.</p>
+            <ul>
+              <li>MVP de hardware, software y control</li>
+              <li>Pilotos con métricas técnicas y económicas</li>
+              <li>Telemetría, energía, RAS y módulos reutilizables</li>
+            </ul>
+            <div class="dev-outcome">Resultado → innovación con riesgo controlado</div>
+          </article>
+
+          <article class="dev-card dev-d reveal">
+            <div class="dev-top"><span class="line-code">LÍNEA D</span><span class="line-dot"></span></div>
+            <div class="dev-visual integration-visual" aria-hidden="true">
+              <svg viewBox="0 0 180 110">
+                <circle cx="90" cy="55" r="19"></circle><circle cx="90" cy="55" r="38"></circle>
+                <circle cx="90" cy="10" r="6"></circle><circle cx="142" cy="55" r="6"></circle><circle cx="90" cy="100" r="6"></circle><circle cx="38" cy="55" r="6"></circle>
+                <path d="M90 16V36M136 55h-27M90 94V74M44 55h27"></path>
+              </svg>
+            </div>
+            <h3>Ingeniería e Integración de Sistemas</h3>
+            <p>La línea integradora: une proceso físico, control, software, información y personas para intervenir el sistema completo.</p>
+            <ul>
+              <li>Diagnóstico sistémico físico + digital</li>
+              <li>Arquitectura, integración y automatización</li>
+              <li>Observabilidad, documentación, analítica e IA</li>
+            </ul>
+            <div class="dev-outcome">Resultado → mayor control, visibilidad y menor incertidumbre</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="nervous-section" id="sistema">
+      <div class="nervous-image" aria-hidden="true"></div>
+      <div class="nervous-overlay" aria-hidden="true"></div>
+      <div class="container nervous-content reveal">
+        <span class="eyebrow eyebrow-light">EL SISTEMA NERVIOSO INDUSTRIAL</span>
+        <h2>Conectamos operación, información e inteligencia.</h2>
+        <p>Cada capa aprovecha la anterior: primero capturamos lo que ocurre, luego damos contexto a la información y finalmente apoyamos la decisión.</p>
+        <div class="layers-flow">
+          <div class="layer-card"><span>1 · OT</span><strong>Operación física</strong><small>activos · sensores · PLC · control</small></div>
+          <div class="layer-arrow">→</div>
+          <div class="layer-card"><span>2 · IT</span><strong>Información conectada</strong><small>ERP · documentos · APIs · históricos</small></div>
+          <div class="layer-arrow">→</div>
+          <div class="layer-card"><span>3 · IA</span><strong>Decisiones con contexto</strong><small>analítica · alertas · agentes · recomendaciones</small></div>
+        </div>
+        <div class="nervous-note">Trazabilidad operacional · evidencia técnica · menos trabajo manual</div>
+      </div>
+    </section>
+
+    <section class="section technical-section" id="vision">
+      <div class="container">
+        <div class="section-head split-head reveal">
+          <div>
+            <span class="eyebrow">VISIÓN TÉCNICA</span>
+            <h2>Del modelo matemático al proceso real.</h2>
+          </div>
+          <p>Control, simulación, comunicaciones y visualización se diseñan como partes del mismo sistema.</p>
+        </div>
+
+        <div class="tech-grid">
+          <article class="tech-card tech-control reveal">
+            <div class="tech-head"><span>CONTROL</span><code>PID · FEEDBACK</code></div>
+            <div class="eq-stack">
+              <code>u(t)=K<sub>p</sub>e(t)+K<sub>i</sub>∫e(t)dt+K<sub>d</sub>de(t)/dt</code>
+              <code>G(s)=Y(s)/U(s)</code>
+            </div>
+            <svg viewBox="0 0 420 190" class="matlab-chart" aria-label="Respuesta de control tipo MATLAB">
+              <g class="m-grid"><path d="M35 30H395M35 65H395M35 100H395M35 135H395M35 170H395"></path><path d="M80 18V175M130 18V175M180 18V175M230 18V175M280 18V175M330 18V175M380 18V175"></path></g>
+              <path class="m-ref" d="M35 154H78V86H395"></path>
+              <path class="m-line cyan" d="M35 154 C66 154,71 36,116 47 C150 55,143 109,184 95 C216 84,230 86,264 87 C307 88,340 86,395 86"></path>
+              <path class="m-line green" d="M35 154 C65 154,76 64,118 68 C151 71,158 95,193 89 C230 84,272 86,395 86"></path>
+              <path class="m-line blue" d="M35 154 C70 154,82 82,124 78 C162 75,184 86,220 86 C270 86,330 86,395 86"></path>
+            </svg>
+            <div class="legend"><span class="cyan-dot">● rápido</span><span class="green-dot">● amortiguado</span><span class="blue-dot">● robusto</span><span class="ref-dot">● referencia</span></div>
+          </article>
+
+          <article class="tech-card tech-model reveal">
+            <div class="tech-head"><span>MODELOS</span><code>STATE SPACE</code></div>
+            <div class="equation-table">
+              <div><span>Estado</span><code>ẋ(t)=Ax(t)+Bu(t)</code></div>
+              <div><span>Salida</span><code>y(t)=Cx(t)+Du(t)</code></div>
+              <div><span>Transferencia</span><code>G(s)=K(τs+1)/(s²+2ζωₙs+ωₙ²)</code></div>
+              <div><span>Balance</span><code>m·cₚ·dT/dt = Qᵢₙ − Qₒᵤₜ</code></div>
+            </div>
+            <p>Modelamos antes de intervenir: dinámica, perturbaciones, restricciones y respuesta esperada.</p>
+          </article>
+
+          <article class="tech-card tech-comms reveal">
+            <div class="tech-head"><span>COMUNICACIONES</span><code>OT · IT · EDGE</code></div>
+            <div class="protocol-hub">
+              <div class="hub-core">OPC UA</div>
+              <span class="p1">Modbus TCP</span><span class="p2">MQTT</span><span class="p3">PROFINET</span><span class="p4">EtherNet/IP</span>
+              <span class="p5">CANopen</span><span class="p6">BACnet</span><span class="p7">IEC 61850</span><span class="p8">DNP3</span>
+            </div>
+            <div class="protocol-row"><span>RS-485</span><span>REST API</span><span>SQL</span><span>HTTP</span><span>CSV</span></div>
+          </article>
+
+          <article class="tech-card tech-data reveal">
+            <div class="tech-head"><span>DATOS</span><code>T(x,y) · HEATMAP</code></div>
+            <svg viewBox="0 0 420 220" class="surface-chart" aria-label="Superficie de temperatura tipo MATLAB">
+              <defs>
+                <linearGradient id="surf" x1="0" x2="1" y1="1" y2="0"><stop offset="0" stop-color="#2454dc"/><stop offset=".23" stop-color="#2ec9df"/><stop offset=".47" stop-color="#66da83"/><stop offset=".71" stop-color="#f0d94f"/><stop offset="1" stop-color="#ef694e"/></linearGradient>
+              </defs>
+              <path d="M45 176 L96 155 L145 164 L195 129 L245 143 L300 76 L366 104 L366 188 L45 188 Z" fill="url(#surf)" opacity=".96"></path>
+              <g class="surface-grid"><path d="M45 176L96 155L145 164L195 129L245 143L300 76L366 104"></path><path d="M54 188L105 167L154 176L204 141L254 155L309 88L366 116"></path><path d="M45 176L54 188M96 155L105 167M145 164L154 176M195 129L204 141M245 143L254 155M300 76L309 88M366 104L366 116"></path></g>
+              <rect x="383" y="54" width="14" height="120" rx="7" fill="url(#surf)"></rect>
+            </svg>
+            <p>Visualización para detectar tendencia, eficiencia, condición y anomalías del proceso.</p>
+          </article>
+        </div>
       </div>
     </section>
 
     <section class="section projects-section" id="proyectos">
       <div class="container">
-        <div class="section-heading heading-row">
-          <div>
-            <span class="eyebrow">PROYECTOS DESTACADOS</span>
-            <h2>Experiencia técnica aplicada.</h2>
-          </div>
-          <p>Trabajos reales que conectan diseño, control, medición y ejecución en terreno.</p>
+        <div class="section-head split-head reveal">
+          <div><span class="eyebrow">EXPERIENCIA APLICADA</span><h2>Proyectos que respaldan la ingeniería.</h2></div>
+          <p>Diseño, integración, medición y ejecución sobre problemas reales.</p>
         </div>
 
         <div class="projects-grid">
-          <article class="project-card">
-            <img src="proyecto-vehice.png" alt="Proyecto VEHICE laboratorio de histopatología" />
+          <article class="project-card reveal">
+            <div class="project-media"><img src="proyecto-vehice.png" alt="Proyecto VEHICE laboratorio de histopatología" /></div>
             <div class="project-body">
-              <span class="project-label">VEHICE · LABORATORIO DE HISTOPATOLOGÍA</span>
-              <h3>Control, sensórica, visualización y control de nivel</h3>
-              <p>Integración con PLC Siemens LOGO!, transmisores y monitoreo de variables criticas; oxígeno disuelto, ORP, temperatura, conductividad, pH y turbidez. Control de nivel para sistema RAS en acuicultura.</p>
-              <div class="pill-row"><span>Automatización</span><span>PLC</span><span>Visualización</span><span>Control de nivel RAS</span></div>
+              <span class="project-code">VEHICE · LABORATORIO DE HISTOPATOLOGÍA</span>
+              <h3>Control, sensórica, visualización y nivel RAS</h3>
+              <p>Integración con PLC Siemens LOGO!, transmisores y monitoreo de variables críticas; oxígeno disuelto, ORP, temperatura, conductividad, pH y turbidez. Control de nivel para sistema RAS en acuicultura.</p>
+              <div class="pill-row"><span>PLC</span><span>Instrumentación</span><span>RAS</span><span>Visualización</span></div>
             </div>
           </article>
 
-          <article class="project-card">
-            <img src="proyecto-chiller.png" alt="Proyecto chiller industrial" />
+          <article class="project-card reveal">
+            <div class="project-media"><img src="proyecto-chiller.png" alt="Proyecto chiller industrial" /></div>
             <div class="project-body">
-              <span class="project-label">CHILLER INDUSTRIAL</span>
+              <span class="project-code">CHILLER INDUSTRIAL</span>
               <h3>Control y operación de proceso térmico</h3>
               <p>Diagnóstico técnico e intervención orientada a operación, control, continuidad y mejora funcional del equipo.</p>
               <div class="pill-row"><span>Refrigeración</span><span>Control</span><span>Eficiencia</span></div>
             </div>
           </article>
 
-          <article class="project-card">
-            <img src="proyecto-switchgear.png" alt="Mantención y medición eléctrica de switchgear" />
+          <article class="project-card reveal">
+            <div class="project-media"><img src="proyecto-switchgear.png" alt="Mantención y medición eléctrica de switchgear" /></div>
             <div class="project-body">
-              <span class="project-label">SWITCHGEAR · MANTENCIÓN ELÉCTRICA</span>
+              <span class="project-code">SWITCHGEAR · MANTENCIÓN ELÉCTRICA</span>
               <h3>Medición de respuesta y diagnóstico</h3>
               <p>Verificación de tiempos de cierre, corriente máxima y respuesta de maniobra mediante instrumentación especializada.</p>
               <div class="pill-row"><span>Medición</span><span>Diagnóstico</span><span>Confiabilidad</span></div>
@@ -323,143 +303,130 @@
     </section>
 
     <section class="brain-section" id="brain">
-      <div class="brain-geometry" aria-hidden="true"></div>
-      <div class="container brain-grid">
-        <div class="brain-copy">
-          <span class="eyebrow eyebrow-dark">CYSI BRAIN</span>
-          <h2>Conectamos datos, procesos y personas para una operación más inteligente.</h2>
-          <p>Un cerebro digital que integra fuentes operacionales, automatiza flujos y entrega información trazable para apoyar decisiones.</p>
-          <div class="hero-actions">
-            <a class="btn btn-copper" href="#contacto">Conocer CYSI Brain →</a>
-            <a class="btn btn-ghost-light" href="#proyectos">Ver experiencia</a>
+      <div class="brain-noise" aria-hidden="true"></div>
+      <div class="container brain-layout">
+        <div class="brain-copy reveal">
+          <span class="eyebrow eyebrow-light">CYSI BRAIN</span>
+          <h2>De sistemas aislados a una memoria operacional.</h2>
+          <p>
+            CYSI Brain es una arquitectura en desarrollo para consultar, auditar y automatizar información de la empresa.
+            Puede comenzar como un flujo o tablero puntual y evolucionar hacia una capa de inteligencia empresarial.
+          </p>
+          <div class="brain-actions">
+            <span>Buscar</span><span>Alertar</span><span>Reportar</span><span>Recomendar</span>
           </div>
         </div>
 
-        <div class="brain-system-diagram">
-          <div class="brain-stage stage-datos">
-            <span class="stage-num">01</span>
-            <h3>Datos</h3>
-            <p>Sensores, ERP, documentos, APIs y eventos operacionales.</p>
-          </div>
-          <div class="brain-stage stage-modelos">
-            <span class="stage-num">02</span>
-            <h3>Modelos</h3>
-            <p>Contexto, reglas, estructuras, KPIs y lógica de negocio.</p>
-          </div>
-          <div class="brain-core" aria-label="Cerebro digital conectado">
-            <svg viewBox="0 0 540 380">
-              <defs>
-                <linearGradient id="brainGlow" x1="0" x2="1"><stop offset="0" stop-color="#cfeff7"/><stop offset="1" stop-color="#5fd9ea"/></linearGradient>
-                <linearGradient id="brainCopper" x1="0" x2="1"><stop offset="0" stop-color="#be9063"/><stop offset="1" stop-color="#e5b98d"/></linearGradient>
-              </defs>
-              <path class="brain-cable" d="M120 80 C175 80,180 110,222 132"></path>
-              <path class="brain-cable" d="M420 80 C365 80,360 110,318 132"></path>
-              <path class="brain-cable" d="M120 300 C175 300,182 270,224 246"></path>
-              <path class="brain-cable" d="M420 300 C365 300,358 270,316 246"></path>
-              <g class="brain-node"><circle cx="115" cy="80" r="8"></circle><circle cx="425" cy="80" r="8"></circle><circle cx="115" cy="300" r="8"></circle><circle cx="425" cy="300" r="8"></circle></g>
-              <g class="brain-shell" transform="translate(160,70)">
-                <path d="M84 28c-31 0-56 24-56 54 0 9 2 17 6 24-10 8-16 20-16 34 0 23 19 42 42 42h24V28h0Z"></path>
-                <path d="M136 28c31 0 56 24 56 54 0 9-2 17-6 24 10 8 16 20 16 34 0 23-19 42-42 42h-24V28h0Z"></path>
-                <path d="M84 60h52M84 94h52M84 128h52"></path>
-                <path d="M84 60c-12 0-22 10-22 22M136 60c12 0 22 10 22 22"></path>
-                <path d="M84 128c-12 0-22 10-22 22M136 128c12 0 22 10 22 22"></path>
-              </g>
-              <g class="brain-gear" transform="translate(245,160)">
-                <circle cx="25" cy="25" r="17"></circle>
-                <path d="M25 0v10M25 40v10M0 25h10M40 25h10M8 8l7 7M35 35l7 7M8 42l7-7M35 15l7-7"></path>
-              </g>
-            </svg>
-          </div>
-          <div class="brain-stage stage-inteligencia">
-            <span class="stage-num">03</span>
-            <h3>Inteligencia</h3>
-            <p>Automatización, IA operativa, alertas y recomendaciones.</p>
-          </div>
-          <div class="brain-stage stage-resultados">
-            <span class="stage-num">04</span>
-            <h3>Resultados</h3>
-            <p>Visibilidad, trazabilidad, control y mejores decisiones.</p>
-          </div>
-        </div></div>
+        <div class="brain-diagram reveal" aria-label="Arquitectura conceptual CYSI Brain">
+          <svg viewBox="0 0 780 470">
+            <defs>
+              <linearGradient id="brainLine" x1="0" x2="1"><stop offset="0" stop-color="#cfeff7"/><stop offset="1" stop-color="#63d4e3"/></linearGradient>
+              <linearGradient id="brainGold" x1="0" x2="1"><stop offset="0" stop-color="#be9063"/><stop offset="1" stop-color="#e5ba91"/></linearGradient>
+            </defs>
+            <g class="brain-links">
+              <path d="M155 105 C245 105,245 175,320 188"></path><path d="M155 360 C245 360,250 300,320 278"></path>
+              <path d="M625 105 C535 105,535 175,460 188"></path><path d="M625 360 C535 360,530 300,460 278"></path>
+            </g>
+            <g class="brain-core-svg">
+              <path d="M350 120c-53 0-96 42-96 94 0 14 3 27 9 39-17 14-28 35-28 58 0 40 33 73 73 73h42V120Z"></path>
+              <path d="M430 120c53 0 96 42 96 94 0 14-3 27-9 39 17 14 28 35 28 58 0 40-33 73-73 73h-42V120Z"></path>
+              <path d="M350 166h80M350 220h80M350 274h80"></path>
+              <path d="M350 166c-20 0-36 16-36 36M430 166c20 0 36 16 36 36"></path>
+              <path d="M350 274c-20 0-36 16-36 36M430 274c20 0 36 16 36 36"></path>
+            </g>
+            <g class="brain-gear-svg"><circle cx="390" cy="246" r="28"></circle><path d="M390 205v16M390 271v16M349 246h16M415 246h16M361 217l11 11M408 264l11 11M361 275l11-11M408 228l11-11"></path></g>
+            <g class="brain-node-svg"><circle cx="150" cy="105" r="8"></circle><circle cx="150" cy="360" r="8"></circle><circle cx="630" cy="105" r="8"></circle><circle cx="630" cy="360" r="8"></circle></g>
+          </svg>
+
+          <div class="brain-label bl-source"><span>01</span><b>Fuentes</b><small>ERP · Drive · Gmail · Excel · sensores</small></div>
+          <div class="brain-label bl-connect"><span>02</span><b>Conectores</b><small>APIs · n8n · integraciones</small></div>
+          <div class="brain-label bl-intel"><span>04</span><b>Inteligencia</b><small>reglas · IA · agentes</small></div>
+          <div class="brain-label bl-action"><span>05</span><b>Acciones</b><small>buscar · alertar · reportar · recomendar</small></div>
+          <div class="memory-chip"><span>03 · MEMORIA</span><b>eventos · entidades · PostgreSQL</b></div>
+        </div>
       </div>
     </section>
 
-    <section class="section reasons-section" id="nosotros">
+    <section class="section method-section" id="metodo">
       <div class="container">
-        <div class="section-heading heading-row compact-heading">
-          <div>
-            <span class="eyebrow">POR QUÉ CYSI</span>
-            <h2>Ingeniería con criterio de sistema.</h2>
-          </div>
+        <div class="section-head split-head reveal">
+          <div><span class="eyebrow">MÉTODO CYSI</span><h2>Observar, conectar, medir y mejorar.</h2></div>
+          <p>Avanzamos por módulos y por evidencia para intervenir sin sobredimensionar la solución.</p>
         </div>
-
-        <div class="reasons-grid">
-          <article>
-            <span class="reason-figure" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M10 48h44"></path><path d="M16 42V28"></path><path d="M32 42V16"></path><path d="M48 42V22"></path><path d="M14 24l8-6 10 4 14-10"></path></svg></span>
-            <div><h3>Criterio técnico</h3><p>Soluciones con fundamento de ingeniería de control y visión de largo plazo.</p></div>
-          </article>
-          <article>
-            <span class="reason-figure" aria-hidden="true"><svg viewBox="0 0 64 64"><rect x="10" y="18" width="18" height="12"></rect><rect x="36" y="18" width="18" height="12"></rect><rect x="23" y="38" width="18" height="12"></rect><path d="M28 24h8M23 44h-6M41 44h6M32 30v8"></path></svg></span>
-            <div><h3>Integración práctica</h3><p>Conectamos tecnología, personas y procesos de forma simple y efectiva.</p></div>
-          </article>
-          <article>
-            <span class="reason-figure" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M18 10h20l8 8v36H18z"></path><path d="M38 10v10h10M24 30h16M24 38h16M24 46h10"></path></svg></span>
-            <div><h3>Trazabilidad documental</h3><p>Información clara, ordenada y utilizable durante todo el ciclo de vida técnico.</p></div>
-          </article>
-          <article>
-            <span class="reason-figure" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M14 48c8-8 28-8 36-24"></path><path d="M39 20h11v11"></path><circle cx="17" cy="47" r="4"></circle><circle cx="49" cy="24" r="4"></circle></svg></span>
-            <div><h3>Evolución progresiva</h3><p>Implementamos por etapas para crecer sin sobredimensionar la solución.</p></div>
-          </article>
-        </div></div>
+        <div class="method-flow">
+          <article class="method-card reveal"><span>01</span><h3>Levantamiento</h3><p>Procesos, activos, sistemas y dolores reales.</p></article>
+          <div class="method-arrow">→</div>
+          <article class="method-card reveal"><span>02</span><h3>Diagnóstico</h3><p>Riesgos, brechas y oportunidades medibles.</p></article>
+          <div class="method-arrow">→</div>
+          <article class="method-card reveal"><span>03</span><h3>Integración</h3><p>APIs, datos, documentos, eventos y señales.</p></article>
+          <div class="method-arrow">→</div>
+          <article class="method-card reveal"><span>04</span><h3>Automatización</h3><p>Flujos, alertas, tableros y control.</p></article>
+          <div class="method-arrow">→</div>
+          <article class="method-card reveal"><span>05</span><h3>Acompañamiento</h3><p>Soporte, mejora continua y escalamiento.</p></article>
+        </div>
+        <div class="entry-strip reveal">
+          <b>Puertas de entrada:</b>
+          <span>Diagnóstico de activos críticos</span><span>Mapa de datos operacionales</span><span>Automatización puntual</span><span>Tablero inicial</span>
+        </div>
       </div>
     </section>
 
-    <section class="contact-banner" id="contacto">
-      <div class="contact-bg" aria-hidden="true"></div>
-      <div class="container contact-content">
-        <div>
-          <span class="eyebrow eyebrow-dark">HABLEMOS</span>
-          <h2>Cuéntanos el problema.<br><span>No necesitas tener definida la solución.</span></h2>
-          <p>Podemos analizarlo, entender el proceso y construir contigo una ruta técnica viable.</p>
+    <section class="section why-section" id="nosotros">
+      <div class="container">
+        <div class="section-head split-head reveal">
+          <div><span class="eyebrow">POR QUÉ CYSI</span><h2>Ingeniería con criterio de sistema.</h2></div>
+          <p>La tecnología se elige después de comprender el problema, la dinámica y la evidencia disponible.</p>
         </div>
-        <div class="contact-buttons">
-          <a class="btn btn-whatsapp" href="https://wa.me/56954393441" target="_blank" rel="noopener">WhatsApp</a>
-          <a class="btn btn-mail" href="mailto:controlysistemasindustriales@gmail.com">Email</a>
+        <div class="why-grid">
+          <article class="why-card reveal">
+            <div class="why-svg"><svg viewBox="0 0 100 70"><path d="M8 58H92M18 52V37M50 52V18M82 52V29M16 31l18-12 18 8 25-18"></path></svg></div>
+            <h3>Visibilidad antes que reacción</h3><p>Observabilidad, históricos y contexto para conocer el estado real antes de una pérdida.</p>
+          </article>
+          <article class="why-card reveal">
+            <div class="why-svg"><svg viewBox="0 0 100 70"><rect x="8" y="13" width="24" height="18" rx="4"></rect><rect x="68" y="13" width="24" height="18" rx="4"></rect><rect x="38" y="43" width="24" height="18" rx="4"></rect><path d="M32 22h36M50 31v12"></path></svg></div>
+            <h3>Integración antes que reemplazo</h3><p>Modernizamos conectando lo que ya existe siempre que sea técnicamente viable.</p>
+          </article>
+          <article class="why-card reveal">
+            <div class="why-svg"><svg viewBox="0 0 100 70"><path d="M19 10h38l14 14v36H19zM57 10v18h18M29 38h32M29 48h25"></path></svg></div>
+            <h3>Evidencia y trazabilidad</h3><p>Cada fuente conectada debe dejar respaldo, contexto y aprendizaje utilizable.</p>
+          </article>
+          <article class="why-card reveal">
+            <div class="why-svg"><svg viewBox="0 0 100 70"><circle cx="24" cy="51" r="5"></circle><circle cx="78" cy="17" r="5"></circle><path d="M29 49C42 47 55 41 63 32 69 25 71 21 73 19M63 14h15v15"></path></svg></div>
+            <h3>Autonomía progresiva</h3><p>Automatización e IA se incorporan por etapas, manteniendo supervisión humana cuando corresponde.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contacto">
+      <div class="contact-pattern" aria-hidden="true"></div>
+      <div class="container contact-layout reveal">
+        <div>
+          <span class="eyebrow">CONSTRUYAMOS UNA RELACIÓN TÉCNICA</span>
+          <h2>Cuéntanos el problema.<br><span>No necesitas tener definida la solución.</span></h2>
+          <p>La primera conversación busca comprender la operación y encontrar un alcance acotado donde podamos generar valor medible.</p>
+        </div>
+        <div class="contact-panel">
+          <a class="contact-link" href="mailto:controlysistemasindustriales@gmail.com"><span>Email</span><b>controlysistemasindustriales@gmail.com</b></a>
+          <a class="contact-link" href="https://wa.me/56954393441" target="_blank" rel="noopener"><span>WhatsApp</span><b>+56 9 5439 3441</b></a>
+          <a class="contact-link" href="https://www.linkedin.com/company/144910906" target="_blank" rel="noopener"><span>LinkedIn</span><b>CYSI · Página de empresa</b></a>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-grid">
+    <div class="container footer-main">
       <div class="footer-brand">
         <div class="brand footer-brandline"><img src="logo-cysi.png" alt="CYSI"><span class="brand-word">CYSI</span></div>
-        <p>Sistemas que conectan ingeniería, datos y operación.</p>
+        <p>Control y Sistemas Industriales SpA</p>
+        <small>Ingeniería · Automatización · Inteligencia</small>
       </div>
-      <div>
-        <h4>Soluciones</h4>
-        <a href="#soluciones">Ingeniería e integración</a>
-        <a href="#brain">CYSI Brain</a>
-        <a href="#soluciones">Automatización</a>
-        <a href="#soluciones">Instrumentación</a>
-      </div>
-      <div>
-        <h4>Empresa</h4>
-        <a href="#nosotros">Nosotros</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="https://www.linkedin.com/company/144910906" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
-      <div>
-        <h4>Contacto</h4>
-        <a href="mailto:controlysistemasindustriales@gmail.com">controlysistemasindustriales@gmail.com</a>
-        <a href="https://wa.me/56954393441" target="_blank" rel="noopener">+56 9 5439 3441</a>
-        <span>Chile</span>
-      </div>
+      <div><b>Líneas</b><a href="#lineas">Industrial Intelligence</a><a href="#lineas">Digital Operations</a><a href="#lineas">CYSI Lab</a><a href="#lineas">Ingeniería e Integración</a></div>
+      <div><b>Sistema</b><a href="#vision">Control y modelado</a><a href="#brain">CYSI Brain</a><a href="#proyectos">Experiencia</a><a href="#metodo">Método CYSI</a></div>
+      <div><b>Contacto</b><a href="mailto:controlysistemasindustriales@gmail.com">Email</a><a href="https://wa.me/56954393441" target="_blank" rel="noopener">WhatsApp</a><a href="https://www.linkedin.com/company/144910906" target="_blank" rel="noopener">LinkedIn</a></div>
     </div>
-    <div class="container footer-bottom">
-      <span>© <span id="year"></span> Control y Sistemas Industriales SpA</span>
-      <span class="mono">CYSI / ENGINEERING SYSTEMS</span>
-    </div>
+    <div class="container footer-bottom"><span>© <span id="year"></span> Control y Sistemas Industriales SpA</span><span class="mono">OT · IT · AI · SYSTEM INTEGRATION</span></div>
   </footer>
 
   <script src="script.js"></script>
