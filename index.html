@@ -1,146 +1,137 @@
 <!doctype html>
-<html lang="es">
+<html lang="es-CL">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CYSI | Ingeniería, control e inteligencia para sistemas industriales</title>
-  <meta name="description" content="CYSI integra ingeniería, automatización, datos e inteligencia para comprender, conectar y optimizar sistemas industriales y operaciones técnicas." />
-  <meta name="theme-color" content="#f4f8f9" />
-  <link rel="icon" type="image/png" href="favicon.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#061722">
+  <meta name="description" content="CYSI conecta máquinas, datos y personas. Ingeniería, automatización industrial, integración OT/IT y soluciones digitales desde el Biobío, Chile.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CL">
+  <meta property="og:title" content="CYSI · Ingeniería, datos e inteligencia industrial">
+  <meta property="og:description" content="Conectamos el mundo físico y digital para operaciones más visibles, confiables y eficientes.">
+  <title>CYSI · Ingeniería, datos e inteligencia industrial</title>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="preload" href="hero-cysi.webp" as="image" fetchpriority="high">
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="site-header">
-  <div class="container nav-shell">
-    <a class="brand" href="#inicio" aria-label="CYSI Inicio"><img src="logo-cysi.png" alt="Logo CYSI"><span>CYSI</span></a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
-    <nav id="mainNav" class="main-nav">
-      <a href="#lineas">Líneas</a><a href="#sistema">Sistema</a><a href="#brain">CYSI Brain</a><a href="#ingenieria">Ingeniería</a><a href="#experiencia">Experiencia</a><a href="#metodo">Método</a><a class="nav-cta" href="#contacto">Hablemos</a>
-    </nav>
-  </div>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+ <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+ <symbol id="i-north" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></symbol>
+ <symbol id="i-factory" viewBox="0 0 24 24"><path d="M3 21V10l6 3V8l6 3V3h5l1 18H3Z M7 17h1m4 0h1m4 0h1"/></symbol>
+ <symbol id="i-network" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><circle cx="4" cy="4" r="2"/><circle cx="20" cy="4" r="2"/><circle cx="4" cy="20" r="2"/><circle cx="20" cy="20" r="2"/><path d="m6 6 4 4m4 4 4 4M6 18l4-4m4-4 4-4"/></symbol>
+ <symbol id="i-cube" viewBox="0 0 24 24"><path d="m12 2 9 5v10l-9 5-9-5V7l9-5Zm0 10v10M3 7l9 5 9-5M7.5 4.5l9 5v5"/></symbol>
+ <symbol id="i-shield" viewBox="0 0 24 24"><path d="m12 2 9 4v6c0 6-9 10-9 10S3 18 3 12V6l9-4Z m-4 10 3 3 5-6"/></symbol>
+ <symbol id="i-data" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 4 16 4 16 0V5M4 12c0 4 16 4 16 0"/></symbol>
+ <symbol id="i-brain" viewBox="0 0 24 24"><path d="M12 4c-2-4-7-1-6 2-4 0-5 6-2 8-2 4 3 8 6 5l2 2V4Zm0 0c2-4 7-1 6 2 4 0 5 6 2 8 2 4-3 8-6 5l-2 2M6 6l2 3m-4 5 4-1m10-7-2 3m4 5-4-1"/></symbol>
+ <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18M7 17v-4m5 4V9m5 8V5m-10 0 4-3 5 1 5-3"/></symbol>
+ <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M20 3C4 1 0 14 8 19c9 6 14-7 12-16ZM4 22 16 8"/></symbol>
+ <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><path d="m15 15 6 6"/></symbol>
+ <symbol id="i-bell" viewBox="0 0 24 24"><path d="M5 9a7 7 0 0 1 14 0v6l2 3H3l2-3V9Zm4 12h6"/></symbol>
+ <symbol id="i-file" viewBox="0 0 24 24"><path d="M5 2h9l5 5v15H5V2Zm9 0v6h5M8 12h8M8 16h8"/></symbol>
+ <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 2 3 7 7 3-7 3-3 7-3-7-7-3 7-3 3-7Z"/></symbol>
+ <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></symbol>
+ <symbol id="i-message" viewBox="0 0 24 24"><path d="M21 11a9 9 0 0 1-13 8l-6 3 2-6A9 9 0 1 1 21 11Z"/><path d="M8 7c0 5 4 9 8 7"/></symbol>
+ <symbol id="i-pin" viewBox="0 0 24 24"><path d="M19 10c0 5-7 12-7 12S5 15 5 10a7 7 0 0 1 14 0Z"/><circle cx="12" cy="9" r="2"/></symbol>
+ <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+ <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 4v16M12 4v16M20 4v16M1 9h6m2 7h6m2-9h6"/></symbol>
+</svg>
+<header class="header" id="inicio">
+ <div class="container nav-shell">
+  <a class="brand" href="#inicio" aria-label="CYSI, inicio"><span class="brand-mark"><img src="logo-cysi.webp" width="1294" height="1187" alt=""></span><span>CYSI<small>CONTROL Y SISTEMAS INDUSTRIALES</small></span></a>
+  <button class="menu-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Abrir menú"><span></span><span></span></button>
+  <nav id="main-nav" aria-label="Navegación principal"><a href="#soluciones">Soluciones</a><a href="#brain">CYSI Brain</a><a href="#proyectos">Proyectos</a><a href="#nosotros">Nosotros</a><a href="#recursos">Recursos</a><a class="nav-contact" href="#contacto">Hablemos <svg><use href="#i-arrow"/></svg></a></nav>
+ </div>
 </header>
-
-<main>
-<section class="hero" id="inicio">
-  <div class="container hero-grid">
-    <div class="hero-copy reveal">
-      <span class="eyebrow">CONTROL · SISTEMAS · DATOS · INTELIGENCIA</span>
-      <h1>Ingeniería para sistemas que necesitan comprenderse, conectarse y evolucionar.</h1>
-      <p class="hero-lead">Integramos ingeniería, automatización y soluciones digitales para optimizar procesos. Abordamos máquinas, control, software, información y personas como un solo sistema.</p>
-      <div class="hero-actions"><a class="btn btn-primary" href="#lineas">Conocer CYSI</a><a class="btn btn-link" href="https://wa.me/56954393441" target="_blank" rel="noopener">Conversemos →</a></div>
-      <div class="hero-signature"><span>Teoría de control</span><i></i><span>Matemática</span><i></i><span>IA</span><i></i><span>OT / IT</span></div>
-    </div>
-    <figure class="hero-visual reveal">
-      <img src="hero-cysi.png" alt="Sala de control con industria integrada al paisaje natural">
-      <figcaption><span class="mono">PV 71.8</span><span>Proceso observado</span><span class="status">● estable</span></figcaption>
-      <div class="hero-curve" aria-hidden="true"><svg viewBox="0 0 260 90"><path class="grid" d="M0 22H260M0 45H260M0 68H260M52 0V90M104 0V90M156 0V90M208 0V90"></path><path class="ref" d="M4 52H256"></path><path class="curve" d="M4 82 C35 82,38 14,72 22 C105 29,100 66,132 56 C166 46,170 52,204 52 C226 52,240 52,256 52"></path></svg><code>ζ=.72 · PID AUTO</code></div>
-    </figure>
+<main id="contenido">
+ <section class="hero" aria-labelledby="hero-title">
+  <img class="hero-background" src="hero-cysi.webp" width="1672" height="941" alt="Visión conceptual de una sala de control industrial integrada al paisaje natural del sur de Chile" fetchpriority="high">
+  <div class="hero-shade"></div>
+  <div class="container hero-inner">
+   <div class="hero-copy">
+    <p class="eyebrow"><span class="status-dot"></span> CONTROL · SISTEMAS · DATOS · INTELIGENCIA</p>
+    <h1 id="hero-title">Ingeniería que conecta.<br>Inteligencia que<br><span>transforma.</span></h1>
+    <p class="hero-description">Integramos ingeniería, automatización y soluciones digitales para optimizar procesos. Conectamos máquinas, datos y personas para una operación más confiable.</p>
+    <div class="hero-actions"><a href="#soluciones" class="button button-white">Explorar soluciones <svg><use href="#i-arrow"/></svg></a><a href="#proyectos" class="button button-outline">Ver proyectos <svg><use href="#i-north"/></svg></a></div>
+   </div>
+   <div class="telemetry" aria-label="Ejemplo ilustrativo de monitoreo">
+    <div class="telemetry-header"><span class="status-dot"></span> VISIBILIDAD OPERACIONAL <span>DEMO</span></div>
+    <div class="telemetry-value"><span>Temperatura del proceso</span><strong>18.7 <small>°C</small></strong><svg viewBox="0 0 160 50" aria-hidden="true"><path d="M0 42 10 36 19 39 29 23 40 32 50 20 61 26 70 12 81 19 93 11 103 16 116 7 130 12 144 4 160 8"/></svg></div>
+    <div class="telemetry-bottom"><span>Capturar</span><i></i><span>Comprender</span><i></i><span>Actuar</span></div>
+   </div>
+   <div class="hero-bottom"><span>INGENIERÍA DESDE EL BIOBÍO, CHILE</span><a href="#conexion">Del mundo físico a la inteligencia <span>↓</span></a><span>OT / IT / IA</span></div>
   </div>
-</section>
+ </section>
 
-<section class="manifesto">
-  <div class="container manifesto-grid reveal">
-    <div><span class="eyebrow">VECTOR CYSI</span><h2>La tecnología no es el punto de partida.<br>El sistema sí.</h2></div>
-    <div class="manifesto-text"><p>Buscamos entender relaciones, variables, restricciones y flujos antes de elegir herramientas. La matemática describe; el control actúa; los datos registran; la inteligencia ayuda a decidir.</p><div class="formula-band"><span>control</span><b>+</b><span>sistemas</span><b>+</b><span>matemática</span><b>+</b><span>IA</span><b>+</b><span>geometría</span><b>+</b><span>naturaleza</span><b>+</b><span>OT/IT</span></div></div>
+ <section class="connection" id="conexion" aria-labelledby="connection-title">
+  <div class="container connection-grid">
+   <div class="connection-intro"><p class="eyebrow dark">EL VECTOR CYSI</p><h2 id="connection-title">Del dato fragmentado<br>a la inteligencia integrada.</h2><p>Una misma visión para comprender el proceso, conectar la información y decidir con contexto.</p></div>
+   <ol class="flow"><li><span class="flow-icon"><svg><use href="#i-factory"/></svg></span><b>Operación real</b><small>Máquinas y procesos</small><span class="flow-code">01 / OT</span></li><li><span class="flow-icon"><svg><use href="#i-data"/></svg></span><b>Datos conectados</b><small>Sistemas e información</small><span class="flow-code">02 / IT</span></li><li><span class="flow-icon"><svg><use href="#i-brain"/></svg></span><b>Inteligencia aplicada</b><small>Análisis y contexto</small><span class="flow-code">03 / IA</span></li><li><span class="flow-icon"><svg><use href="#i-chart"/></svg></span><b>Mejores decisiones</b><small>Acciones con evidencia</small><span class="flow-code">04 / VALOR</span></li></ol>
   </div>
-</section>
+ </section>
 
-<section class="section lines-section" id="lineas">
+ <section class="solutions dark-section" id="soluciones" aria-labelledby="solutions-title">
   <div class="container">
-    <div class="section-head reveal"><span class="eyebrow">LÍNEAS DE DESARROLLO</span><h2>Cuatro formas de intervenir un mismo sistema.</h2><p>Cada línea parte desde un tipo de problema y un cliente distinto, pero comparte una misma lógica de ingeniería: observar, modelar, integrar y medir.</p></div>
-
-    <article class="line-row reveal">
-      <div class="line-number">01</div><div class="line-copy"><span class="line-label">INDUSTRIAL INTELLIGENCE</span><h3>Hacer visible el proceso físico antes de que el problema se transforme en pérdida.</h3><p>Enfocada en operaciones con activos críticos, automatización parcial o información técnica dispersa.</p><div class="line-meta"><div><b>Clientes</b><span>PYMES industriales · plantas · mantenimiento · energía · refrigeración · acuicultura/RAS</span></div><div><b>Capacidades</b><span>PLC · sensores · instrumentación · IoT/edge · alarmas · históricos · dashboards · control</span></div><div><b>Evolución</b><span>desde monitoreo y diagnóstico hacia analítica, optimización y mantenimiento predictivo</span></div></div></div>
-      <div class="line-visual control-visual" aria-hidden="true"><svg viewBox="0 0 360 220"><g class="vgrid"><path d="M25 35H335M25 80H335M25 125H335M25 170H335M80 20V190M140 20V190M200 20V190M260 20V190M320 20V190"></path></g><path class="vref" d="M25 114H335"></path><path class="vcurve" d="M25 178 C55 178,62 42,111 55 C151 66,139 143,193 124 C233 110,260 116,335 114"></path><circle cx="111" cy="55" r="5"></circle><circle cx="193" cy="124" r="5"></circle></svg><code>SP → PV → acción</code></div>
-    </article>
-
-    <article class="line-row reveal reverse">
-      <div class="line-number">02</div><div class="line-copy"><span class="line-label">DIGITAL OPERATIONS</span><h3>Conectar la operación digital para reducir fricción, reproceso y dependencia de personas clave.</h3><p>Enfocada en empresas técnicas, comerciales y B2B que ya utilizan ERP, correo, planillas o Workspace, pero funcionan como islas.</p><div class="line-meta"><div><b>Clientes</b><span>servicios técnicos · distribución · postventa · administración · equipos comerciales y operacionales</span></div><div><b>Capacidades</b><span>ERP/APIs · Workspace · documentos · automatización de flujos · seguimiento · alertas · indicadores</span></div><div><b>Evolución</b><span>desde un flujo puntual hacia memoria corporativa, analítica y CYSI Brain</span></div></div></div>
-      <div class="line-visual network-visual" aria-hidden="true"><svg viewBox="0 0 360 220"><rect x="30" y="35" width="80" height="52" rx="12"></rect><rect x="250" y="35" width="80" height="52" rx="12"></rect><rect x="140" y="138" width="80" height="52" rx="12"></rect><circle cx="180" cy="83" r="28"></circle><path d="M110 61H152M208 61H250M180 111V138"></path><circle cx="180" cy="83" r="8"></circle></svg><code>ERP ↔ APIs ↔ Workspace ↔ memoria</code></div>
-    </article>
-
-    <article class="line-row reveal">
-      <div class="line-number">03</div><div class="line-copy"><span class="line-label">CYSI LAB</span><h3>Transformar problemas repetidos en soluciones modulares antes de invertir en una industrialización mayor.</h3><p>Enfocada en organizaciones con problemas técnicos medibles que se repiten y pueden convertirse en módulos, equipos, software o servicios tecnológicos.</p><div class="line-meta"><div><b>Clientes</b><span>industria · centros tecnológicos · acuicultura · energía · empresas con desafíos repetitivos</span></div><div><b>Capacidades</b><span>discovery · MVP hardware/software/control · pilotos · telemetría · pruebas · ingeniería de producto</span></div><div><b>Evolución</b><span>problema validado → prototipo → piloto con métricas → producto reutilizable</span></div></div></div>
-      <div class="line-visual lab-visual" aria-hidden="true"><svg viewBox="0 0 360 220"><path d="M85 155V68l95-48 95 48v87l-95 45-95-45Z"></path><path d="M85 68l95 51 95-51M180 119v81"></path><circle cx="180" cy="20" r="7"></circle><circle cx="85" cy="155" r="7"></circle><circle cx="275" cy="155" r="7"></circle></svg><code>validar → prototipar → medir → escalar</code></div>
-    </article>
-
-    <article class="line-row reveal reverse">
-      <div class="line-number">04</div><div class="line-copy"><span class="line-label">INGENIERÍA E INTEGRACIÓN DE SISTEMAS</span><h3>Abordar el sistema completo cuando el problema cruza proceso físico, control, software, información y personas.</h3><p>Es la línea integradora de CYSI: diagnostica la operación como sistema y selecciona tecnología según el problema, no al revés.</p><div class="line-meta"><div><b>Clientes</b><span>PYMES industriales y técnicas · operaciones fragmentadas · proyectos multidisciplinares</span></div><div><b>Capacidades</b><span>diagnóstico sistémico · arquitectura · integración · automatización · observabilidad · documentación</span></div><div><b>Evolución</b><span>integración física + digital → trazabilidad → autonomía progresiva con supervisión humana</span></div></div></div>
-      <div class="line-visual system-visual" aria-hidden="true"><svg viewBox="0 0 360 220"><circle cx="180" cy="110" r="34"></circle><circle cx="180" cy="110" r="72"></circle><circle cx="180" cy="25" r="9"></circle><circle cx="282" cy="110" r="9"></circle><circle cx="180" cy="195" r="9"></circle><circle cx="78" cy="110" r="9"></circle><path d="M180 34V76M273 110h-59M180 186v-42M87 110h59"></path><path d="M128 58l104 104M232 58L128 162"></path></svg><code>físico ↔ digital ↔ humano</code></div>
-    </article>
+   <div class="section-heading"><div><p class="eyebrow">NUESTRAS LÍNEAS DE DESARROLLO</p><h2 id="solutions-title">Cuatro perspectivas.<br>Un sistema conectado.</h2></div><p>Desde el activo en terreno hasta la decisión de negocio. Encontramos el punto donde la ingeniería puede generar una mejora concreta.</p></div>
+   <div class="solution-grid">
+    <article class="solution-card"><div class="solution-photo industrial-photo"><span>01 / INDUSTRIA</span></div><div class="solution-content"><svg class="solution-icon"><use href="#i-shield"/></svg><h3>Industrial <br>Intelligence</h3><p>Haz visible el estado de tus activos antes de que una desviación se convierta en una pérdida.</p><dl><dt>ENFOQUE</dt><dd>Inspección, monitoreo, control y confiabilidad.</dd><dt>PARA QUIÉN</dt><dd>Plantas, mantenimiento, acuicultura, energía y refrigeración.</dd></dl><button class="text-action" data-detail="industrial">Explorar esta línea <svg><use href="#i-arrow"/></svg></button></div></article>
+    <article class="solution-card digital"><div class="solution-photo digital-photo"><span>02 / OPERACIÓN DIGITAL</span></div><div class="solution-content"><svg class="solution-icon"><use href="#i-network"/></svg><h3>Digital <br>Operations</h3><p>Conecta tus herramientas y recupera el tiempo que hoy se pierde entre planillas y tareas manuales.</p><dl><dt>ENFOQUE</dt><dd>Integración de información y automatización de flujos.</dd><dt>PARA QUIÉN</dt><dd>Pymes, servicios técnicos y equipos comerciales B2B.</dd></dl><button class="text-action" data-detail="digital">Explorar esta línea <svg><use href="#i-arrow"/></svg></button></div></article>
+    <article class="solution-card lab"><div class="solution-photo lab-photo"><span>03 / INNOVACIÓN</span><svg><use href="#i-cube"/></svg></div><div class="solution-content"><svg class="solution-icon"><use href="#i-cube"/></svg><h3>CYSI Lab<br><span>Innovación y productos</span></h3><p>Convierte un problema técnico recurrente en un prototipo que puedas probar, medir y mejorar.</p><dl><dt>ENFOQUE</dt><dd>Experimentación, pilotos y soluciones modulares.</dd><dt>PARA QUIÉN</dt><dd>Empresas con desafíos que requieren desarrollo a medida.</dd></dl><button class="text-action" data-detail="lab">Explorar esta línea <svg><use href="#i-arrow"/></svg></button></div></article>
+    <article class="solution-card"><div class="solution-photo integration-photo"><span>04 / VISIÓN DE SISTEMAS</span></div><div class="solution-content"><svg class="solution-icon"><use href="#i-sliders"/></svg><h3>Ingeniería e <br>Integración de Sistemas</h3><p>Aborda el proceso completo cuando el desafío cruza máquinas, control, software y personas.</p><dl><dt>ENFOQUE</dt><dd>Diseño, instrumentación, integración OT/IT y documentación.</dd><dt>PARA QUIÉN</dt><dd>Operaciones industriales y proyectos multidisciplinarios.</dd></dl><button class="text-action" data-detail="integration">Explorar esta línea <svg><use href="#i-arrow"/></svg></button></div></article>
+   </div>
+   <div class="solutions-note"><svg><use href="#i-leaf"/></svg><p><strong>Naturaleza + tecnología.</strong> Comprender las relaciones del sistema para usar mejor los recursos, reducir desperdicios y diseñar una operación sostenible.</p><span>INGENIERÍA CON PROPÓSITO</span></div>
   </div>
-</section>
+ </section>
 
-<section class="system-section" id="sistema">
-  <div class="container system-grid">
-    <div class="system-image reveal"><img src="portada-presentacion.png" alt="Visual CYSI de sistemas conectados"><div class="system-image-label"><span class="mono">OT · IT · IA</span><b>El sistema nervioso industrial</b></div></div>
-    <div class="system-copy reveal"><span class="eyebrow light">ARQUITECTURA CYSI</span><h2>De operación física a decisiones con contexto.</h2><p>Cada capa aprovecha la anterior. La inteligencia no reemplaza al proceso: se apoya en evidencia operacional, información conectada y reglas verificables.</p><div class="system-layers"><div><span>1 · OT</span><b>Capturamos lo que ocurre</b><small>activos · sensores · PLC · variables · control</small></div><div><span>2 · IT</span><b>Damos contexto a la información</b><small>ERP · documentos · APIs · históricos · responsables</small></div><div><span>3 · IA</span><b>Apoyamos la decisión</b><small>analítica · alertas · agentes · recomendaciones</small></div></div></div>
-  </div>
-</section>
-
-<section class="brain-section" id="brain">
+ <section class="brain dark-section" id="brain" aria-labelledby="brain-title">
   <div class="container">
-    <div class="brain-head reveal"><div><span class="eyebrow light">CYSI BRAIN</span><h2>De sistemas aislados a una memoria operacional.</h2></div><p>Una arquitectura en desarrollo para consultar, auditar y automatizar información de la empresa. Puede comenzar como un flujo o tablero puntual y evolucionar hacia una capa de inteligencia empresarial.</p></div>
-    <div class="brain-layout reveal">
-      <div class="brain-core-card">
-        <svg viewBox="0 0 520 420" aria-label="Cerebro digital conectado">
-          <defs><linearGradient id="bg1" x1="0" x2="1"><stop offset="0" stop-color="#cfeff7"/><stop offset="1" stop-color="#64d8e7"/></linearGradient><linearGradient id="bg2" x1="0" x2="1"><stop offset="0" stop-color="#be9063"/><stop offset="1" stop-color="#e2b68c"/></linearGradient></defs>
-          <path class="cable" d="M92 70C155 70 167 120 210 145M428 70C365 70 353 120 310 145M92 350C155 350 167 302 210 278M428 350C365 350 353 302 310 278"></path>
-          <g class="nodes"><circle cx="84" cy="70" r="9"></circle><circle cx="436" cy="70" r="9"></circle><circle cx="84" cy="350" r="9"></circle><circle cx="436" cy="350" r="9"></circle></g>
-          <g class="brain" transform="translate(150,80)"><path d="M82 28c-31 0-56 24-56 55 0 9 2 18 6 25-10 9-16 21-16 35 0 24 19 43 43 43h23V28Z"></path><path d="M138 28c31 0 56 24 56 55 0 9-2 18-6 25 10 9 16 21 16 35 0 24-19 43-43 43h-23V28Z"></path><path d="M82 62h56M82 98h56M82 134h56"></path><path d="M82 62c-14 0-25 11-25 25M138 62c14 0 25 11 25 25M82 134c-14 0-25 11-25 25M138 134c14 0 25 11 25 25"></path></g>
-          <g class="gear" transform="translate(225,176)"><circle cx="35" cy="35" r="24"></circle><path d="M35 0v13M35 57v13M0 35h13M57 35h13M10 10l10 10M50 50l10 10M10 60l10-10M50 20l10-10"></path></g>
-        </svg>
-        <div class="brain-center-label"><span class="mono">CYSI BRAIN</span><b>memoria + contexto + acción</b></div>
-      </div>
-      <div class="brain-stack">
-        <div class="brain-layer"><span>01</span><div><b>Fuentes</b><p>ERP · Drive · Gmail · Excel · sensores · documentos</p></div></div>
-        <div class="brain-layer"><span>02</span><div><b>Conectores</b><p>APIs · n8n · integraciones · sincronización</p></div></div>
-        <div class="brain-layer"><span>03</span><div><b>Memoria</b><p>eventos · entidades · trazabilidad · PostgreSQL</p></div></div>
-        <div class="brain-layer"><span>04</span><div><b>Inteligencia</b><p>reglas · analítica · IA · agentes con contexto</p></div></div>
-        <div class="brain-layer active"><span>05</span><div><b>Acciones</b><p>buscar · alertar · reportar · recomendar</p></div></div>
-      </div>
-    </div>
-    <div class="brain-actions reveal"><article><span>BUSCAR</span><h3>Encontrar información operacional</h3><p>Clientes, facturas, documentos, stock, alarmas o eventos sin reconstruir el contexto manualmente.</p></article><article><span>ALERTAR</span><h3>Detectar antes de reaccionar</h3><p>Riesgos, atrasos, stock crítico, fallas o desviaciones que requieren atención.</p></article><article><span>REPORTAR</span><h3>Transformar registros en indicadores</h3><p>KPIs operacionales, comerciales y técnicos con fuentes trazables.</p></article><article><span>RECOMENDAR</span><h3>Orientar la siguiente acción</h3><p>Sugerencias basadas en reglas, contexto, evidencia e historial operacional.</p></article></div>
-    <div class="brain-pilot reveal"><span class="pilot-tag">CASO PILOTO</span><div><h3>Punto Frío · Operación B2B de refrigeración</h3><p>Integración progresiva de datos comerciales y operacionales, sincronización, memoria de eventos, automatización de flujos y consultas trazables. El piloto sirve para validar CYSI Brain sobre una operación real sin exponer información sensible del cliente.</p></div><div class="pilot-path"><span>datos</span><i>→</i><span>memoria</span><i>→</i><span>capacidades</span><i>→</i><span>agente</span><i>→</i><span>KPIs</span></div></div>
+   <div class="section-heading brain-heading"><div><p class="eyebrow">MEMORIA · CONTEXTO · ACCIÓN</p><h2 id="brain-title">CYSI <span>Brain</span><span class="development-badge">EN DESARROLLO · PILOTO REAL</span></h2></div><p>Los datos de tu empresa tienen una historia.<br>Estamos construyendo la inteligencia para conectarla.</p></div>
+   <div class="brain-architecture">
+    <div class="brain-side"><button class="architecture-node" data-layer="sources" aria-pressed="false"><svg><use href="#i-file"/></svg><span><b>Fuentes</b><small>ERP · documentos · sensores</small></span><span class="node-index">01</span></button><button class="architecture-node" data-layer="connectors" aria-pressed="false"><svg><use href="#i-network"/></svg><span><b>Conectores</b><small>APIs · n8n · flujos</small></span><span class="node-index">02</span></button></div>
+    <div class="brain-center"><img src="cysi-brain.webp" alt="Representación conceptual de CYSI Brain: una red de inteligencia conectada a fuentes de información" width="1536" height="1024" loading="lazy"><div class="brain-core-label"><span>CYSI BRAIN</span><small>INTEGRACIÓN / CONTEXTO / ACCIÓN</small></div></div>
+    <div class="brain-side"><button class="architecture-node" data-layer="memory" aria-pressed="false"><svg><use href="#i-data"/></svg><span><b>Memoria</b><small>Eventos · entidades · auditoría</small></span><span class="node-index">03</span></button><button class="architecture-node" data-layer="intelligence" aria-pressed="false"><svg><use href="#i-brain"/></svg><span><b>Inteligencia</b><small>Reglas · análisis · IA</small></span><span class="node-index">04</span></button><button class="architecture-node action-node" data-layer="actions" aria-pressed="true"><svg><use href="#i-spark"/></svg><span><b>Acciones</b><small>Resultados en la operación</small></span><span class="node-index">05</span></button></div>
+   </div>
+   <div class="architecture-description" aria-live="polite"><span id="layer-label">05 / ACCIONES</span><p id="layer-description">Buscar, alertar, reportar y recomendar: convertir información conectada en apoyo concreto a las decisiones, con evidencia y supervisión humana.</p></div>
+   <div class="brain-explorer">
+    <div class="brain-explorer-intro"><p class="eyebrow">EXPLORA SUS CAPACIDADES</p><h3>De una pregunta<br>a una decisión informada.</h3><p>Selecciona una capacidad para ver un ejemplo de uso.</p><span class="demo-label">DEMOSTRACIÓN ILUSTRATIVA · SIN DATOS REALES</span></div>
+    <div class="demo-console"><div class="demo-tabs" role="tablist" aria-label="Capacidades de CYSI Brain"><button id="tab-search" role="tab" aria-selected="true" aria-controls="brain-demo" data-mode="search"><svg><use href="#i-search"/></svg>Buscar</button><button id="tab-alert" role="tab" aria-selected="false" tabindex="-1" aria-controls="brain-demo" data-mode="alert"><svg><use href="#i-bell"/></svg>Alertar</button><button id="tab-report" role="tab" aria-selected="false" tabindex="-1" aria-controls="brain-demo" data-mode="report"><svg><use href="#i-chart"/></svg>Reportar</button><button id="tab-recommend" role="tab" aria-selected="false" tabindex="-1" aria-controls="brain-demo" data-mode="recommend"><svg><use href="#i-spark"/></svg>Recomendar</button></div><div class="demo-panel" id="brain-demo" role="tabpanel" aria-labelledby="tab-search" tabindex="0"><p class="demo-question" id="demo-question">¿Dónde está el historial de este equipo?</p><div class="demo-response"><span class="console-symbol">↳</span><div><h4 id="demo-title">La información, en su contexto.</h4><p id="demo-description">Reunir documentos, intervenciones y eventos asociados a un activo, conservando su origen y fecha para poder verificarlos.</p><div class="demo-sources" id="demo-sources"><span>Documentos</span><span>Historial</span><span>Trazabilidad</span></div></div></div></div></div>
+   </div>
+   <div class="pilot"><span class="pilot-marker">PILOTO<br><b>01</b></span><div><p class="eyebrow">PUNTO FRÍO / OPERACIÓN B2B</p><h3>Desarrollo sobre una operación real.</h3><p>Integración progresiva de información comercial y operacional, memoria de eventos y consultas con evidencia. Un piloto para validar capacidades, aprender y construir una solución repetible.</p></div><button class="text-action" data-detail="pilot">Conocer el enfoque <svg><use href="#i-arrow"/></svg></button></div>
   </div>
-</section>
+ </section>
 
-<section class="section engineering-section" id="ingenieria">
+ <section class="engineering light-section" id="ingenieria" aria-labelledby="engineering-title">
   <div class="container">
-    <div class="section-head reveal"><span class="eyebrow">INGENIERÍA</span><h2>La matemática debe explicar algo real.</h2><p>En CYSI las ecuaciones, curvas y protocolos no son decoración: representan comportamiento, estabilidad, transferencia de información y decisiones de diseño.</p></div>
-    <div class="engineering-grid">
-      <article class="eng-card wide reveal"><div class="eng-head"><span>CONTROL DE PROCESOS</span><code>PID · CLOSED LOOP</code></div><div class="equation">u(t)=K<sub>p</sub>e(t)+K<sub>i</sub>∫e(t)dt+K<sub>d</sub>de(t)/dt</div><svg viewBox="0 0 620 240" class="matlab"><g class="mgrid"><path d="M45 35H585M45 80H585M45 125H585M45 170H585M45 215H585"></path><path d="M105 20V220M175 20V220M245 20V220M315 20V220M385 20V220M455 20V220M525 20V220"></path></g><path class="mref" d="M45 193H105V108H585"></path><path class="mc1" d="M45 193 C85 193,88 44,160 61 C213 74,199 143,267 122 C324 104,362 108,585 108"></path><path class="mc2" d="M45 193 C86 193,102 80,168 82 C225 84,247 118,304 111 C371 105,436 108,585 108"></path></svg><div class="plot-meta"><span>referencia</span><span>respuesta rápida</span><span>respuesta amortiguada</span></div></article>
-      <article class="eng-card reveal"><div class="eng-head"><span>MODELOS</span><code>STATE SPACE</code></div><div class="eq-list"><div><small>estado</small><code>ẋ=Ax+Bu</code></div><div><small>salida</small><code>y=Cx+Du</code></div><div><small>transferencia</small><code>G(s)=Y(s)/U(s)</code></div><div><small>balance</small><code>m·cₚ·dT/dt=Qᵢₙ−Qₒᵤₜ</code></div></div></article>
-      <article class="eng-card reveal"><div class="eng-head"><span>COMUNICACIONES</span><code>OT / IT</code></div><div class="protocols"><span>OPC UA</span><span>Modbus TCP</span><span>MQTT</span><span>PROFINET</span><span>EtherNet/IP</span><span>CANopen</span><span>BACnet</span><span>IEC 61850</span><span>DNP3</span><span>RS-485</span><span>REST API</span><span>SQL</span></div></article>
-    </div>
+   <div class="section-heading"><div><p class="eyebrow dark">VISIÓN TÉCNICA</p><h2 id="engineering-title">La ingeniería detrás<br>de cada decisión.</h2></div><p>Modelamos el comportamiento del proceso y conectamos sus variables con decisiones de diseño, control e integración.</p></div>
+   <div class="engineering-grid">
+    <article class="control-panel"><div class="panel-header"><span>01 / TEORÍA DE CONTROL</span><span class="plot-badge">SIMULACIÓN</span></div><h3>Comprender la respuesta.<br>Diseñar la estabilidad.</h3><p class="equation">u(t) = K<sub>p</sub>e(t) + K<sub>i</sub>∫<sub>0</sub><sup>t</sup>e(τ)dτ + K<sub>d</sub> de(t)/dt</p><div class="plot-wrap"><svg id="response-plot" viewBox="0 0 640 220" role="img" aria-labelledby="plot-title plot-description"><title id="plot-title">Respuesta de un sistema de segundo orden</title><desc id="plot-description">Simulación de respuesta al escalón. Ajusta el amortiguamiento para comparar oscilación y tiempo de respuesta.</desc><g class="plot-grid"><path d="M45 30H615M45 72H615M45 114H615M45 156H615M45 198H615M45 30V198M140 30V198M235 30V198M330 30V198M425 30V198M520 30V198M615 30V198"/></g><path class="reference-line" d="M45 86H615"/><path id="response-curve" class="response-curve" d="M45 198C90 198 90 50 160 60S240 108 300 91 430 86 615 86"/><g class="plot-labels"><text x="10" y="34">1.5</text><text x="10" y="90">1.0</text><text x="10" y="146">0.5</text><text x="16" y="201">0</text><text x="44" y="217">0</text><text x="317" y="217">5</text><text x="580" y="217">10 s</text></g></svg></div><div class="plot-legend"><span>Respuesta del sistema</span><span>Referencia</span></div><div class="plot-control"><label for="damping">Amortiguamiento <span>ζ = <output for="damping" id="damping-value">0.55</output></span></label><input id="damping" type="range" min="0.2" max="1.5" step="0.05" value="0.55"><p id="damping-description" aria-live="polite">Respuesta oscilatoria amortiguada.</p></div><small class="simulation-note">Modelo educativo: G(s) = ωₙ² / (s² + 2ζωₙs + ωₙ²), con ωₙ = 1.4 rad/s. No representa una instalación real.</small></article>
+    <div class="engineering-stack"><article class="model-panel"><p class="panel-header">02 / MODELADO DE SISTEMAS</p><h3>Del proceso al modelo.</h3><div class="model-equations"><span>ẋ(t) = Ax(t) + Bu(t)</span><span>y(t) = Cx(t) + Du(t)</span></div><p>Variables, restricciones e interacciones para entender qué medir y dónde intervenir.</p></article><article class="protocol-panel"><p class="panel-header">03 / INTEGRACIÓN OT / IT</p><h3>Un lenguaje común<br>entre sistemas.</h3><div class="protocols"><span>OPC UA</span><span>Modbus TCP</span><span>MQTT</span><span>PROFINET</span><span>EtherNet/IP</span><span>BACnet</span><span>REST API</span><span>SQL</span></div><p>La arquitectura y los protocolos se seleccionan según los equipos, el alcance y las condiciones de cada proyecto.</p></article></div>
+   </div>
   </div>
-</section>
+ </section>
 
-<section class="section projects-section" id="experiencia">
-  <div class="container">
-    <div class="section-head reveal"><span class="eyebrow">EXPERIENCIA</span><h2>La visión se respalda con trabajo real.</h2><p>Diseño, control, sensórica, diagnóstico y ejecución en terreno sobre sistemas industriales y técnicos.</p></div>
-    <div class="projects-layout">
-      <article class="project project-main reveal"><div class="project-image"><img src="proyecto-vehice.png" alt="Proyecto VEHICE"></div><div class="project-copy"><span>VEHICE · LABORATORIO DE HISTOPATOLOGÍA</span><h3>Control, sensórica, visualización y nivel para sistema RAS.</h3><p>Integración con PLC Siemens LOGO!, transmisores y monitoreo de variables críticas; oxígeno disuelto, ORP, temperatura, conductividad, pH y turbidez. Control de nivel para sistema RAS en acuicultura.</p><div class="tags"><span>PLC</span><span>Instrumentación</span><span>RAS</span><span>Visualización</span></div></div></article>
-      <article class="project reveal"><div class="project-image small"><img src="proyecto-chiller.png" alt="Chiller industrial"></div><div class="project-copy"><span>CHILLER INDUSTRIAL</span><h3>Control y operación de proceso térmico.</h3><p>Diagnóstico e intervención orientada a continuidad operacional, control y mejora funcional del equipo.</p><div class="tags"><span>Refrigeración</span><span>Control</span><span>Eficiencia</span></div></div></article>
-      <article class="project reveal"><div class="project-image small"><img src="proyecto-switchgear.png" alt="Switchgear industrial"></div><div class="project-copy"><span>SWITCHGEAR · MANTENCIÓN ELÉCTRICA</span><h3>Medición de respuesta y diagnóstico.</h3><p>Verificación de tiempos de cierre, corriente máxima y respuesta de maniobra mediante instrumentación especializada.</p><div class="tags"><span>Medición</span><span>Diagnóstico</span><span>Confiabilidad</span></div></div></article>
-    </div>
+ <section class="projects light-section" id="proyectos" aria-labelledby="projects-title">
+  <div class="container"><div class="section-heading"><div><p class="eyebrow dark">EXPERIENCIA APLICADA</p><h2 id="projects-title">Donde la ingeniería<br>se encuentra con la realidad.</h2></div><p>Antecedentes de trabajo técnico en procesos, instrumentación y mantenimiento. Problemas concretos, abordados desde el terreno.</p></div>
+   <div class="project-grid">
+    <article class="project-card"><button class="project-image" data-detail="vehice" aria-label="Ver proyecto VEHICE completo"><img src="proyecto-vehice.webp" width="1122" height="1402" alt="Registro del proyecto de control y sensórica para sistema RAS en VEHICE" loading="lazy"><span class="project-image-label">ACUICULTURA / RAS</span><span class="circle-arrow"><svg><use href="#i-north"/></svg></span></button><div class="project-info"><span class="project-number">PROYECTO / 01</span><h3>VEHICE · Sistema RAS</h3><p>Control de nivel, sensórica y visualización de variables en un sistema de recirculación acuícola del laboratorio de histopatología.</p><div class="tags"><span>Control</span><span>Instrumentación</span><span>Visualización</span></div><button class="text-action dark-text" data-detail="vehice">Ver el proyecto <svg><use href="#i-arrow"/></svg></button></div></article>
+    <article class="project-card"><button class="project-image" data-detail="chiller" aria-label="Ver proyecto chiller industrial completo"><img src="proyecto-chiller.webp" width="1122" height="1402" alt="Registro técnico de intervención de un chiller industrial" loading="lazy"><span class="project-image-label">REFRIGERACIÓN INDUSTRIAL</span><span class="circle-arrow"><svg><use href="#i-north"/></svg></span></button><div class="project-info"><span class="project-number">PROYECTO / 02</span><h3>Chiller industrial</h3><p>Diagnóstico e intervención de control en un proceso térmico, con foco en su funcionamiento y continuidad operacional.</p><div class="tags"><span>Automatización</span><span>Control</span><span>Refrigeración</span></div><button class="text-action dark-text" data-detail="chiller">Ver el proyecto <svg><use href="#i-arrow"/></svg></button></div></article>
+    <article class="project-card"><button class="project-image" data-detail="switchgear" aria-label="Ver proyecto de medición eléctrica completo"><img src="proyecto-switchgear.webp" width="1448" height="1086" alt="Registro de medición y diagnóstico de equipos de maniobra eléctrica" loading="lazy"><span class="project-image-label">MANTENIMIENTO ELÉCTRICO</span><span class="circle-arrow"><svg><use href="#i-north"/></svg></span></button><div class="project-info"><span class="project-number">PROYECTO / 03</span><h3>Medición y diagnóstico eléctrico</h3><p>Verificación de tiempos de cierre, corriente máxima y respuesta de maniobra mediante instrumentación especializada.</p><div class="tags"><span>Medición</span><span>Diagnóstico</span><span>Confiabilidad</span></div><button class="text-action dark-text" data-detail="switchgear">Ver el proyecto <svg><use href="#i-arrow"/></svg></button></div></article>
+   </div>
   </div>
-</section>
+ </section>
 
-<section class="method-section" id="metodo">
-  <div class="container">
-    <div class="method-head reveal"><span class="eyebrow light">MÉTODO CYSI</span><h2>Observar, conectar, medir y mejorar.</h2><p>Avanzamos por módulos para reducir riesgo, generar evidencia y evitar cambios masivos sin una hipótesis técnica clara.</p></div>
-    <div class="method-steps reveal"><div><span>01</span><b>Levantamiento</b><small>procesos · activos · sistemas · dolores reales</small></div><i>→</i><div><span>02</span><b>Diagnóstico</b><small>riesgos · brechas · oportunidades medibles</small></div><i>→</i><div><span>03</span><b>Integración</b><small>APIs · datos · documentos · eventos</small></div><i>→</i><div><span>04</span><b>Automatización</b><small>flujos · alertas · tableros · reportes</small></div><i>→</i><div><span>05</span><b>Acompañamiento</b><small>soporte · mejora continua · escalamiento</small></div></div>
-    <div class="entry-grid reveal"><article><span>ENTRADA 01</span><h3>Diagnóstico de activos críticos</h3><p>Disponibilidad, alarmas, evidencia y puntos de falla recurrentes.</p></article><article><span>ENTRADA 02</span><h3>Mapa de datos operacionales</h3><p>Fuentes, planillas, ERP, correos, documentos y brechas de trazabilidad.</p></article><article><span>ENTRADA 03</span><h3>Automatización puntual</h3><p>Un proceso repetitivo con ahorro visible y validación rápida.</p></article><article><span>ENTRADA 04</span><h3>Tablero inicial</h3><p>Indicadores simples para mantenimiento, ventas, stock o postventa.</p></article></div>
-  </div>
-</section>
+ <section class="about dark-section" id="nosotros" aria-labelledby="about-title"><div class="container about-grid"><div class="about-visual"><img src="portada-presentacion.webp" width="1672" height="941" alt="Visión de integración entre infraestructura industrial e información digital" loading="lazy"><div class="about-visual-caption"><svg><use href="#i-network"/></svg><span>PROCESO FÍSICO.<br>VISIÓN DE SISTEMA.</span></div></div><div class="about-copy"><p class="eyebrow">SOMOS CYSI</p><h2 id="about-title">Entender el sistema.<br>Conectar sus posibilidades.</h2><p>Somos Control y Sistemas Industriales SpA. Desde el Biobío, unimos ingeniería de terreno, automatización y desarrollo digital para resolver desafíos de operaciones industriales y empresas técnicas.</p><p>Partimos por comprender cómo trabaja tu operación: sus personas, activos, información y restricciones. Después elegimos la tecnología que tiene sentido para ese problema.</p><div class="about-principles"><span><svg><use href="#i-check"/></svg>Diseño basado en el proceso</span><span><svg><use href="#i-check"/></svg>Integración gradual</span><span><svg><use href="#i-check"/></svg>Evidencia y trazabilidad</span></div><a class="text-action" href="#metodo">Así trabajamos <svg><use href="#i-arrow"/></svg></a></div></div></section>
 
-<section class="contact" id="contacto"><div class="container contact-grid reveal"><div><span class="eyebrow">HABLEMOS</span><h2>Cuéntanos el problema.<br><em>No necesitas tener definida la solución.</em></h2><p>La primera conversación busca comprender la operación y detectar un alcance acotado donde podamos generar valor medible.</p></div><div class="contact-card"><img src="logo-cysi.png" alt="CYSI"><b>Control y Sistemas Industriales SpA</b><a href="mailto:controlysistemasindustriales@gmail.com">controlysistemasindustriales@gmail.com</a><a href="https://wa.me/56954393441" target="_blank" rel="noopener">+56 9 5439 3441</a><a href="https://www.linkedin.com/company/144910906" target="_blank" rel="noopener">LinkedIn CYSI</a><div class="contact-actions"><a class="btn btn-primary" href="https://wa.me/56954393441" target="_blank" rel="noopener">WhatsApp</a><a class="btn btn-dark" href="mailto:controlysistemasindustriales@gmail.com">Email</a></div></div></div></section>
+ <section class="method light-section" id="metodo" aria-labelledby="method-title"><div class="container"><div class="section-heading"><div><p class="eyebrow dark">MÉTODO CYSI</p><h2 id="method-title">Un problema claro.<br>Un avance que se pueda medir.</h2></div><p>Comenzamos con un alcance acotado. Construimos evidencia, validamos en la operación y ampliamos lo que funciona.</p></div><ol class="method-steps"><li><span>01</span><h3>Levantamiento</h3><p>Escuchamos al equipo y observamos procesos, activos y fuentes de información.</p></li><li><span>02</span><h3>Diagnóstico</h3><p>Priorizamos el problema, las brechas y un criterio de éxito verificable.</p></li><li><span>03</span><h3>Integración</h3><p>Conectamos equipos, datos y sistemas con un alcance técnico definido.</p></li><li><span>04</span><h3>Automatización</h3><p>Implementamos control, flujos, alertas o tableros según la necesidad.</p></li><li><span>05</span><h3>Acompañamiento</h3><p>Documentamos, revisamos resultados y planificamos las siguientes mejoras.</p></li></ol></div></section>
+
+ <section class="resources" id="recursos" aria-labelledby="resources-title"><div class="container resources-grid"><div><p class="eyebrow dark">RECURSOS / PRIMEROS PASOS</p><h2 id="resources-title">Empezar con<br>las preguntas correctas.</h2><p>Una guía breve para preparar tu próximo proyecto de integración.</p><a href="guia-diagnostico-cysi.txt" download class="text-action dark-text">Descargar guía de diagnóstico <svg><use href="#i-arrow"/></svg></a></div><div class="faqs"><details open><summary>¿Necesito reemplazar todos mis sistemas?<span>+</span></summary><p>Primero revisamos la infraestructura existente. Cuando es viable, integramos lo que ya utilizas y avanzamos por etapas. El diagnóstico define qué conservar, conectar o modernizar.</p></details><details><summary>¿Cómo empieza un proyecto con CYSI?<span>+</span></summary><p>Con una conversación sobre el proceso y el problema. A partir del levantamiento proponemos un alcance, los entregables y cómo evaluar el resultado. Puede comenzar con un activo crítico, un flujo de trabajo o un tablero.</p></details><details><summary>¿CYSI Brain ya es un producto terminado?<span>+</span></summary><p>Está en desarrollo y validación mediante un piloto real. Integra información y capacidades de consulta con evidencia. El alcance, los conectores y las acciones disponibles se evalúan para cada implementación.</p></details><details><summary>¿Trabajan con empresas fuera del sector industrial?<span>+</span></summary><p>Sí. Digital Operations está orientada también a empresas técnicas, comerciales y de servicios con procesos manuales o información fragmentada entre herramientas.</p></details></div></div></section>
+
+ <section class="contact dark-section" id="contacto" aria-labelledby="contact-title"><div class="container contact-grid"><div><p class="eyebrow">CONSTRUYAMOS TU PRÓXIMO PROYECTO</p><h2 id="contact-title">Cuéntanos el problema.<br><span>Conectemos la solución.</span></h2><p>No necesitas tener la tecnología definida. Empecemos por lo que quieres mejorar en tu operación.</p><div class="contact-links"><a href="mailto:controlysistemasindustriales@gmail.com"><svg><use href="#i-mail"/></svg><span><small>ESCRÍBENOS</small>controlysistemasindustriales@gmail.com</span><svg><use href="#i-north"/></svg></a><a href="https://wa.me/56954393441" target="_blank" rel="noopener noreferrer"><svg><use href="#i-message"/></svg><span><small>WHATSAPP</small>+56 9 5439 3441</span><svg><use href="#i-north"/></svg></a><div><svg><use href="#i-pin"/></svg><span><small>DESDE EL BIOBÍO</small>Talcahuano, Chile</span></div></div></div><form class="contact-form" id="contact-form"><h3>¿Dónde está tu desafío?</h3><label for="contact-name">Tu nombre<input id="contact-name" name="name" autocomplete="name" maxlength="100" placeholder="Nombre y apellido" required></label><label for="contact-company">Empresa <span>(opcional)</span><input id="contact-company" name="company" autocomplete="organization" maxlength="150" placeholder="Nombre de tu empresa"></label><label for="contact-area">Me interesa<select id="contact-area" name="area"><option>Industrial Intelligence</option><option>Digital Operations</option><option>CYSI Lab</option><option>Ingeniería e Integración de Sistemas</option><option>CYSI Brain</option><option>Necesito orientación</option></select></label><label for="contact-message">¿Qué necesitas mejorar?<textarea id="contact-message" name="message" rows="3" minlength="10" maxlength="2500" placeholder="Cuéntanos sobre tu proceso o desafío…" required></textarea></label><button class="button button-cyan" type="submit">Preparar conversación <svg><use href="#i-arrow"/></svg></button><p class="form-note">Se preparará un mensaje para que lo revises y elijas enviarlo por WhatsApp o correo. Esta página no guarda tus datos.</p><div class="contact-result" id="contact-result" hidden aria-live="polite"><strong>Tu mensaje está listo.</strong><p id="message-preview"></p><div><a class="button button-cyan" id="send-whatsapp" target="_blank" rel="noopener noreferrer">Abrir WhatsApp <svg><use href="#i-north"/></svg></a><a class="button button-outline" id="send-email">Abrir correo <svg><use href="#i-mail"/></svg></a></div></div></form></div></section>
 </main>
-
-<footer><div class="container footer-row"><div class="brand footer-brand"><img src="logo-cysi.png" alt="CYSI"><span>CYSI</span></div><p>Ingeniería · Control · Sistemas · Datos · Inteligencia</p><span class="mono">© <span id="year"></span> CYSI</span></div></footer>
-<script src="script.js"></script>
-</body></html>
+<footer class="footer"><div class="container footer-top"><a class="brand footer-brand" href="#inicio"><span class="brand-mark"><img src="logo-cysi.webp" width="1294" height="1187" alt=""></span><span>CYSI<small>INGENIERÍA · DATOS · INTELIGENCIA</small></span></a><p>Conectamos máquinas, datos y personas.</p><a href="https://www.linkedin.com/company/144910906/" target="_blank" rel="noopener noreferrer">LinkedIn <svg><use href="#i-north"/></svg></a></div><div class="container footer-bottom"><span>© <span id="year">2026</span> Control y Sistemas Industriales SpA</span><button data-detail="privacy">Privacidad</button><a href="#inicio">Volver arriba ↑</a></div></footer>
+<dialog class="detail-dialog" id="detail-dialog" aria-labelledby="dialog-title"><button class="dialog-close" aria-label="Cerrar detalle">×</button><div id="dialog-content"></div></dialog>
+<script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+CYSI WEB V10 — ARCHIVOS PARA GITHUB
+
+Todos los archivos de esta carpeta forman la web. Sube su contenido a la raíz del repositorio.
+Activa GitHub Pages desde la rama elegida y la carpeta raíz. No requiere instalación ni compilación.
+
+Para ver la web en tu equipo, abre index.html.
+Para editar: index.html (contenido), styles.css (diseño), script.js (interacciones).
+Conserva las fuentes y las imágenes junto a estos archivos.
+
+El formulario prepara mensajes; el usuario elige abrir WhatsApp o correo para enviarlos.
+Las demostraciones de Brain y control son ilustrativas, sin conexión con datos reales.
+
+Contacto tomado de V9: controlysistemasindustriales@gmail.com | +56 9 5439 3441
+
+Tipografías incluidas: Inter, DM Sans, Plus Jakarta Sans, Space Grotesk, Open Sans, IBM Plex Mono.
+Licencias de tipografías en licenses/.

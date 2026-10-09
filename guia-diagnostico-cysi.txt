@@ -1,0 +1,40 @@
+CYSI · GUÍA PARA PREPARAR UN DIAGNÓSTICO
+Control y Sistemas Industriales SpA
+
+El objetivo de esta guía es ordenar el problema antes de elegir una tecnología.
+
+1. EL PROCESO
+¿Qué produce o entrega tu operación? ¿Qué equipos, personas y sistemas participan?
+Anota el punto de inicio y el resultado esperado.
+
+2. EL PROBLEMA
+Describe una situación concreta que se repita: falla, detención, pérdida de información,
+tarea manual o dificultad para decidir. ¿Cuándo ocurrió por última vez?
+
+3. LA SOLUCIÓN ACTUAL
+¿Cómo lo resuelven hoy? ¿Quién interviene? ¿Qué herramientas utilizan?
+¿Qué funciona y qué sigue siendo difícil?
+
+4. LA EVIDENCIA
+¿Existen registros, fotografías, históricos, planillas o documentos que permitan
+entender lo que sucede? No envíes claves, credenciales ni información confidencial.
+
+5. EL CRITERIO DE ÉXITO
+¿Qué cambio observable haría útil el proyecto? Por ejemplo: conocer el estado de
+un activo, disponer de un historial, reducir pasos manuales o dar seguimiento a solicitudes.
+Si existe una medida actual, consérvala como línea base.
+
+6. EL PRIMER ALCANCE
+¿Qué activo, variable o flujo se podría abordar primero? ¿Quién validaría la solución?
+¿Qué restricciones de operación, acceso o infraestructura hay que considerar?
+
+MÉTODO CYSI
+Levantamiento → Diagnóstico → Integración → Automatización → Acompañamiento
+
+CONVERSEMOS
+Correo: controlysistemasindustriales@gmail.com
+WhatsApp: +56 9 5439 3441
+Talcahuano, Biobío, Chile
+
+Esta guía prepara una conversación. El alcance, entregables y condiciones se definen
+para cada proyecto después de revisar el proceso.
