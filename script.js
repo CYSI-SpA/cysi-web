@@ -124,7 +124,7 @@ const details = {
     ], note: 'CYSI Brain forma parte de la evolución de esta línea y se encuentra en desarrollo y validación.', area: 'Digital Operations'
   },
   lab: {
-    eyebrow: '03 / CYSI LAB', title: 'Probar una idea antes de escalarla.',
+    image: 'cysi-lab-holografico.webp', imageAlt: 'Visión conceptual de un laboratorio con prototipos holográficos', eyebrow: '03 / CYSI LAB', title: 'Probar una idea antes de escalarla.',
     intro: 'Un espacio de desarrollo para transformar problemas técnicos que se repiten en prototipos, módulos y soluciones reutilizables.',
     sections: [
       ['Qué podemos abordar', ['Exploración del problema y definición de requisitos medibles.', 'Prototipos de hardware, software, telemetría o control.', 'Pilotos, pruebas funcionales y documentación de aprendizajes.']],
@@ -133,7 +133,7 @@ const details = {
     ], note: 'Los desarrollos de CYSI Lab se plantean como prototipos y pilotos. La disponibilidad de un producto se confirma caso a caso.', area: 'CYSI Lab'
   },
   integration: {
-    eyebrow: '04 / INGENIERÍA E INTEGRACIÓN DE SISTEMAS', title: 'Una visión completa del proceso.',
+    image: 'cysi-integracion-metatron.webp', imageAlt: 'Integración geométrica conceptual de sistemas industriales', eyebrow: '04 / INGENIERÍA E INTEGRACIÓN DE SISTEMAS', title: 'Una visión completa del proceso.',
     intro: 'La capacidad integradora de CYSI conecta el mundo físico, el control, el software, la información y las personas que operan el sistema.',
     sections: [
       ['Qué podemos abordar', ['Levantamiento, diagnóstico y arquitectura de solución.', 'Automatización, instrumentación e integración OT/IT.', 'Documentación técnica, puesta en servicio y acompañamiento según el alcance acordado.']],
@@ -187,7 +187,9 @@ function openDetail(key, trigger) {
   wrapper.append(element('p', 'eyebrow dark', detail.eyebrow));
   const title = element('h2', '', detail.title); title.id = 'dialog-title'; wrapper.append(title);
   wrapper.append(element('p', '', detail.intro));
-  if (detail.image) {
+  if (window.CYSI_GALLERIES?.[key]) {
+    wrapper.append(createGallery(key, true));
+  } else if (detail.image) {
     const image = element('img', 'dialog-image'); image.src = detail.image; image.alt = detail.imageAlt; wrapper.append(image);
   }
   detail.sections.forEach(([heading, body]) => {
@@ -237,3 +239,113 @@ form.addEventListener('input', event => {
   if (typeof event.target.setCustomValidity === 'function') event.target.setCustomValidity('');
   select('#contact-result').hidden = true;
 });
+
+// Gallery content lives in galerias.js so new images can be added without changing this code.
+const galleryPositions = Object.create(null);
+const galleryViews = Object.create(null);
+const galleryCategories = { vehice: 'ACUICULTURA / RAS', chiller: 'REFRIGERACIÓN INDUSTRIAL', switchgear: 'MANTENIMIENTO ELÉCTRICO' };
+
+function setGalleryIndex(key, next) {
+  const images = window.CYSI_GALLERIES[key].images;
+  galleryPositions[key] = (next + images.length) % images.length;
+  galleryViews[key] = (galleryViews[key] || []).filter(view => view.root.isConnected);
+  galleryViews[key].forEach(view => view.render());
+}
+
+function createGallery(key, expanded = false) {
+  const config = window.CYSI_GALLERIES[key];
+  const images = config.images;
+  if (!images.length) return element('p', '', 'No hay imágenes disponibles.');
+  if (!Number.isInteger(galleryPositions[key])) galleryPositions[key] = 0;
+  const root = element('div', 'project-carousel' + (expanded ? ' carousel-expanded' : ''));
+  root.dataset.gallery = key;
+  root.setAttribute('role', 'group');
+  root.setAttribute('aria-roledescription', 'carrusel');
+  root.setAttribute('aria-label', 'Imágenes de ' + config.title);
+  root.tabIndex = 0;
+  const header = element('div', 'carousel-header');
+  header.append(element('span', '', galleryCategories[key]));
+  const count = element('span', 'carousel-count'); header.append(count); root.append(header);
+  const viewport = element('div', 'carousel-viewport');
+  const imageButton = element(expanded ? 'a' : 'button', 'carousel-image');
+  if (expanded) { imageButton.target = '_blank'; imageButton.rel = 'noopener'; }
+  else imageButton.type = 'button';
+  const image = element('img'); image.loading = 'lazy'; image.decoding = 'async';
+  imageButton.append(image);
+  const enlarge = element('span', 'carousel-enlarge', '↗'); enlarge.setAttribute('aria-hidden', 'true'); imageButton.append(enlarge);
+  viewport.append(imageButton); root.append(viewport);
+  const controls = element('div', 'carousel-controls');
+  const previous = element('button', 'carousel-arrow', '←'); previous.type = 'button'; previous.setAttribute('aria-label', 'Imagen anterior de ' + config.title);
+  const next = element('button', 'carousel-arrow', '→'); next.type = 'button'; next.setAttribute('aria-label', 'Imagen siguiente de ' + config.title);
+  const caption = element('p', 'carousel-caption');
+  controls.append(previous, caption, next); root.append(controls);
+  const thumbnails = element('div', 'carousel-thumbnails'); thumbnails.setAttribute('aria-label', 'Elegir imagen de ' + config.title);
+  const thumbButtons = images.map((item, index) => {
+    const button = element('button', 'carousel-thumb'); button.type = 'button';
+    button.setAttribute('aria-label', `Ver imagen ${index + 1}: ${item.caption}`);
+    const thumb = element('img'); thumb.src = item.thumbnail || item.src; thumb.alt = ''; thumb.loading = 'lazy'; thumb.width = 48; thumb.height = 38;
+    button.append(thumb); button.addEventListener('click', () => setGalleryIndex(key, index)); thumbnails.append(button); return button;
+  });
+  root.append(thumbnails);
+  const status = element('span', 'sr-only'); status.setAttribute('aria-live', 'polite'); status.setAttribute('aria-atomic', 'true'); root.append(status);
+  let originalLink;
+  if (expanded) {
+    const footer = element('div', 'carousel-footer');
+    footer.append(element('span', '', 'Usa las flechas o desliza para recorrer las imágenes.'));
+    originalLink = element('a', 'text-action dark-text', 'Abrir imagen completa ↗'); originalLink.target = '_blank'; originalLink.rel = 'noopener';
+    footer.append(originalLink); root.append(footer);
+  }
+  function render() {
+    const index = galleryPositions[key];
+    const current = images[index];
+    image.src = current.src; image.alt = current.alt;
+    count.textContent = `${String(index + 1).padStart(2, '0')} / ${String(images.length).padStart(2, '0')}`;
+    caption.textContent = current.caption;
+    status.textContent = `Imagen ${index + 1} de ${images.length}. ${current.caption}`;
+    imageButton.setAttribute('aria-label', `Ampliar imagen ${index + 1} de ${config.title}: ${current.caption}`);
+    if (expanded) { imageButton.href = current.src; originalLink.href = current.src; }
+    thumbButtons.forEach((button, thumbIndex) => button.setAttribute('aria-pressed', String(thumbIndex === index)));
+    if (root.isConnected) {
+      const selected = thumbButtons[index].getBoundingClientRect();
+      const strip = thumbnails.getBoundingClientRect();
+      if (selected.left < strip.left) thumbnails.scrollLeft -= strip.left - selected.left + 12;
+      else if (selected.right > strip.right) thumbnails.scrollLeft += selected.right - strip.right + 12;
+    }
+  }
+  previous.addEventListener('click', () => setGalleryIndex(key, galleryPositions[key] - 1));
+  next.addEventListener('click', () => setGalleryIndex(key, galleryPositions[key] + 1));
+  root.addEventListener('keydown', event => {
+    const index = galleryPositions[key];
+    const target = { ArrowLeft: index - 1, ArrowRight: index + 1, Home: 0, End: images.length - 1 }[event.key];
+    if (target !== undefined) { event.preventDefault(); setGalleryIndex(key, target); }
+  });
+  let touchStart;
+  let ignoreClickUntil = 0;
+  viewport.addEventListener('pointerdown', event => {
+    if (event.pointerType === 'touch') touchStart = { x: event.clientX, y: event.clientY };
+  });
+  viewport.addEventListener('pointercancel', () => { touchStart = null; });
+  viewport.addEventListener('pointerup', event => {
+    if (!touchStart) return;
+    const dx = event.clientX - touchStart.x, dy = event.clientY - touchStart.y;
+    touchStart = null;
+    if (Math.abs(dx) > 45 && Math.abs(dx) > Math.abs(dy) * 1.3) {
+      ignoreClickUntil = performance.now() + 500;
+      setGalleryIndex(key, galleryPositions[key] + (dx < 0 ? 1 : -1));
+    }
+  });
+  imageButton.addEventListener('click', event => {
+    if (performance.now() < ignoreClickUntil) { event.preventDefault(); return; }
+    if (!expanded) openDetail(key, imageButton);
+  });
+  if (images.length === 1) { previous.hidden = true; next.hidden = true; thumbnails.hidden = true; }
+  render();
+  (galleryViews[key] ||= []).push({ root, render });
+  return root;
+}
+
+if (window.CYSI_GALLERIES) {
+  selectAll('.project-card > .project-image[data-detail]').forEach(cover => {
+    if (window.CYSI_GALLERIES[cover.dataset.detail]) cover.replaceWith(createGallery(cover.dataset.detail));
+  });
+}

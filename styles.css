@@ -23,3 +23,55 @@
 @media(min-width:401px) and (max-width:560px){.solution-grid{grid-template-columns:1fr;gap:20px}.solution-photo{height:170px}.solution-content{padding:10px 24px 19px}.solution-card h3{font-size:27px;min-height:0}.solution-card h3 br{display:none}.solution-card h3 span{font-size:20px;display:block;margin-top:4px}.solution-card p{font-size:13px;min-height:0}.solution-card dd{font-size:11px;min-height:0}.solution-card .text-action{font-size:12px}.solution-content dl{display:grid;grid-template-columns:1fr 1fr;gap:0 20px}.solution-content dt:nth-of-type(2){grid-column:2;grid-row:1}.solution-content dd:nth-of-type(1){grid-column:1}.solution-content dd:nth-of-type(2){grid-column:2;grid-row:2}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
 @media print{.header,.hero,.telemetry,.brain-center,.contact-form,.footer,.detail-dialog,.project-image,.menu-toggle,.button,.text-action{display:none!important}.dark-section{background:white!important;color:#132b3d!important}.container{width:100%}.section-heading{break-inside:avoid}.solution-grid,.project-grid{display:block}.solution-card,.project-card{break-inside:avoid;margin-bottom:15px}.solution-card{background:white;color:#132b3d}.solution-card p,.solution-card dd{color:#132b3d}.solution-photo{display:none}.brain-side{display:none}section{padding:25px 0!important}.contact-links a{color:#132b3d}}
+
+/* V11 · conceptual imagery, project galleries and relocated telemetry. */
+.solution-photo{height:170px}
+.solution-photo.concept-photo{background:#061722;isolation:isolate}
+.solution-concept{width:100%;height:100%;object-fit:cover;object-position:center}
+.integration-photo .solution-concept{object-fit:contain}
+.solution-photo.concept-photo:after{background:linear-gradient(0deg,#091d29a8,transparent 28%);pointer-events:none}
+.solution-photo.concept-photo>span{font-size:7px;background:#041722d9;top:10px;left:12px}
+.operational-visibility{display:grid;grid-template-columns:1fr 340px;align-items:center;gap:55px;margin-top:25px;padding:31px 35px;background:linear-gradient(115deg,#0c2938,#041925);border:1px solid #245365;border-radius:5px;color:#e8f4f9}
+.visibility-copy .eyebrow{font-family:var(--mono)!important;font-size:8px;margin-bottom:12px}
+.visibility-copy h3{font-size:25px;line-height:1.18}
+.visibility-copy>p:last-child{color:#a9c6d6;font-size:12px;line-height:1.85;max-width:570px;margin-top:14px}
+.operational-visibility .telemetry{position:static;width:100%;margin:0;backdrop-filter:none;box-shadow:none;border-color:#3a7187;padding:20px 24px}
+.operational-visibility .telemetry-header{font-size:8px;gap:9px}
+.operational-visibility .telemetry-value>span{font:400 11px var(--body);color:#b8d4df}
+.operational-visibility .telemetry-value strong{font-size:40px}
+.operational-visibility .telemetry-value svg{width:120px}
+.operational-visibility .telemetry-bottom{font-size:9px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+.project-carousel{min-width:0;background:#edf3f6;border-bottom:1px solid #cfdee6}
+.carousel-header{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:13px 17px;background:#e7eff4;color:#27566e;font:500 8px/1.5 var(--mono);letter-spacing:.06em}
+.carousel-count{font-size:10px;color:#1a7595;white-space:nowrap}
+.carousel-viewport{position:relative;touch-action:pan-y}
+.carousel-image{position:relative;display:block;width:100%;height:285px;padding:14px;border:0;background:#e7eff4;cursor:zoom-in}
+.carousel-image>img{width:100%;height:100%;object-fit:contain;display:block;background:transparent;user-select:none;-webkit-user-drag:none}
+.carousel-enlarge{position:absolute;right:14px;bottom:14px;border:1px solid #81aabd;background:#072738ee;color:white;width:32px;height:32px;display:grid;place-items:center;border-radius:50%;font-size:18px;box-shadow:0 2px 7px #0002}
+.carousel-controls{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;padding:11px 12px 9px;background:#fff;min-height:69px}
+.carousel-arrow{display:grid;place-items:center;width:40px;height:40px;border:1px solid #bbd0dc;border-radius:50%;background:#f5fafc;color:#176b89;font-size:20px;line-height:1;transition:background .15s}
+.carousel-arrow:hover{background:#d9f4f9;border-color:#3387a2}
+.carousel-caption{font:400 10px/1.6 var(--body);color:#3c6176;text-align:center;min-width:0}
+.carousel-thumbnails{display:flex;gap:7px;padding:2px 13px 13px;background:#fff;overflow-x:auto;scrollbar-width:thin;scrollbar-color:#a3c5d5 #f1f5f8;overscroll-behavior-x:contain}
+.carousel-thumb{width:48px;height:44px;flex:0 0 48px;border:2px solid transparent;padding:3px;background:#edf3f6;border-radius:3px;overflow:hidden}
+.carousel-thumb img{width:100%;height:100%;object-fit:contain;display:block}
+.carousel-thumb[aria-pressed=true]{border-color:#158fb0;background:#e2f4f9}
+.carousel-thumb:hover{border-color:#6ba8bf}
+.carousel-expanded{margin:27px 0 25px;border:1px solid #c9dce6;border-radius:5px;overflow:hidden}
+.carousel-expanded .carousel-image{height:min(53vh,520px);min-height:270px;padding:14px}
+.carousel-expanded .carousel-controls{padding:12px 16px;grid-template-columns:44px 1fr 44px}
+.carousel-expanded .carousel-arrow{width:44px;height:44px}
+.detail-dialog .carousel-caption{font-size:12px;line-height:1.6}
+.carousel-expanded .carousel-thumbnails{padding:0 16px 14px}
+.carousel-expanded .carousel-thumb{width:58px;height:49px;flex-basis:58px}
+.carousel-footer{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 16px;background:#f5f9fb;border-top:1px solid #d1e1e9}
+.carousel-footer>span{font-size:9px;color:#557384;line-height:1.6}
+.carousel-footer .text-action{font-size:10px;white-space:nowrap;padding:4px 0}
+@media(min-width:1600px){.solution-photo{height:185px}.carousel-image{height:310px}}
+@media(max-width:1200px){.operational-visibility{gap:30px;grid-template-columns:1fr 300px}.operational-visibility .telemetry-value svg{width:100px}.carousel-image{height:250px}.carousel-header{font-size:7px}.carousel-caption{font-size:9px}}
+@media(max-width:980px){.carousel-image{height:240px;padding:10px}.carousel-controls{grid-template-columns:34px 1fr 34px;gap:5px;padding-inline:8px;min-height:78px}.carousel-arrow{width:34px;height:34px}.carousel-header{padding-inline:10px;font-size:6px}.carousel-count{font-size:9px}.carousel-enlarge{width:28px;height:28px;right:10px;bottom:10px}.operational-visibility{padding:27px;grid-template-columns:1fr 260px;gap:25px}.operational-visibility .telemetry{padding:17px}.operational-visibility .telemetry-header{font-size:6px}.operational-visibility .telemetry-value strong{font-size:33px}.operational-visibility .telemetry-bottom{font-size:8px}}
+@media(max-width:760px){.hero-inner{min-height:620px;padding-bottom:115px}.solution-photo{height:150px}.operational-visibility{grid-template-columns:1fr;gap:26px;padding:26px 23px}.visibility-copy h3{font-size:26px}.visibility-copy>p:last-child{font-size:12px}.operational-visibility .telemetry{width:min(100%,360px);padding:20px 22px}.operational-visibility .telemetry-header{font-size:7px}.operational-visibility .telemetry-value strong{font-size:39px}.operational-visibility .telemetry-value svg{width:115px}.operational-visibility .telemetry-bottom{font-size:8px}.carousel-image{height:330px;padding:14px}.carousel-header{font-size:8px;padding:14px 18px}.carousel-count{font-size:10px}.carousel-caption{font-size:11px}.carousel-controls{grid-template-columns:44px 1fr 44px;gap:12px;padding:12px 15px;min-height:73px}.carousel-arrow{width:44px;height:44px}.carousel-thumbnails{padding:0 15px 15px;gap:8px}.carousel-thumb{width:49px;height:46px;flex-basis:49px}.carousel-expanded .carousel-image{height:48vh;min-height:250px}.carousel-expanded .carousel-controls{gap:8px;padding:10px}.detail-dialog .carousel-caption{font-size:10px}.carousel-expanded .carousel-thumbnails{padding-inline:10px}.carousel-footer{flex-direction:column;align-items:flex-start;gap:4px}.carousel-footer>span{font-size:9px}.carousel-footer .text-action{font-size:11px}.dialog-content-inner{padding-inline:20px}}
+@media(max-width:560px){.solution-photo{height:200px}.carousel-image{height:320px}}
+@media(max-width:400px){.hero-inner{min-height:640px;padding-bottom:100px}.carousel-image{height:300px}.carousel-controls{gap:8px}.carousel-caption{font-size:10px}}
+@media print{.carousel-controls,.carousel-thumbnails,.carousel-header,.carousel-enlarge,.carousel-footer{display:none!important}.carousel-image{height:190px}.operational-visibility{background:#fff;color:#132b3d}.operational-visibility .telemetry{display:none!important}}
